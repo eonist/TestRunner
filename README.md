@@ -14,6 +14,15 @@ Simplifies running UI-tests
 
 ### Example:
 ```swift
+class SearchScene {
+  override run(){
+    let searchBar = XTElement.findFirst("SearchBar")
+    searchBar.search("Eminem")
+    let searchButton = XTElement.findFirst("SearchButton")
+    searchButton.tap()
+    onComplete()
+  }
+}
 let albumCoverSequence: [SceneKind.Type] = [LoginScene.self, SearchScene.self, LogoutScene.self]
 albumCoverSequence.run() // 🏃
 albumCoverSequence.first { $0.type == SearchScene.self }.onComplete { Swift.print("SearchScene ✅") }
