@@ -29,19 +29,19 @@
 		F128060A22B68F0E00E7BC7A /* Iterator_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F128060922B68F0D00E7BC7A /* Iterator_IOS.framework */; };
 		F128060B22B68F0E00E7BC7A /* Iterator_IOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F128060922B68F0D00E7BC7A /* Iterator_IOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F128061622B68F7E00E7BC7A /* TestRunnerIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = F128061422B68F7E00E7BC7A /* TestRunnerIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F128061922B68F7E00E7BC7A /* TestRunnerIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F128061222B68F7E00E7BC7A /* TestRunnerIOS.framework */; };
-		F128061A22B68F7E00E7BC7A /* TestRunnerIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F128061222B68F7E00E7BC7A /* TestRunnerIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F128061F22B68F8B00E7BC7A /* Iterator_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F128060922B68F0D00E7BC7A /* Iterator_IOS.framework */; };
-		F128062022B68FA900E7BC7A /* SceneRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12805E422B68EE600E7BC7A /* SceneRunner.swift */; };
-		F128062122B68FA900E7BC7A /* SceneRunner+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12805E522B68EE600E7BC7A /* SceneRunner+Type.swift */; };
-		F128062222B68FA900E7BC7A /* SceneRunner+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12805E622B68EE600E7BC7A /* SceneRunner+Action.swift */; };
-		F128062322B68FA900E7BC7A /* SceneRunnerKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12805E822B68EE600E7BC7A /* SceneRunnerKind.swift */; };
-		F128062422B68FA900E7BC7A /* SceneKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12805E922B68EE600E7BC7A /* SceneKind.swift */; };
-		F128062522B68FA900E7BC7A /* SceneKind+Getter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12805EA22B68EE600E7BC7A /* SceneKind+Getter.swift */; };
 		F128063122B6959400E7BC7A /* TestRunnerExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F128063022B6959400E7BC7A /* TestRunnerExampleTests.swift */; };
 		F128063822B695B600E7BC7A /* TestRunnerIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F128061222B68F7E00E7BC7A /* TestRunnerIOS.framework */; };
 		F128063922B695CF00E7BC7A /* Iterator_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F128060922B68F0D00E7BC7A /* Iterator_IOS.framework */; };
-		F128063D22B698DB00E7BC7A /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12805E222B68EE600E7BC7A /* Scene.swift */; };
+		F128064322B69B5E00E7BC7A /* TestRunnerIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F128061222B68F7E00E7BC7A /* TestRunnerIOS.framework */; };
+		F128064422B69B5E00E7BC7A /* TestRunnerIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F128061222B68F7E00E7BC7A /* TestRunnerIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F128064722B69BE300E7BC7A /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12805E222B68EE600E7BC7A /* Scene.swift */; };
+		F128064822B69BE300E7BC7A /* SceneRunnerKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12805E822B68EE600E7BC7A /* SceneRunnerKind.swift */; };
+		F128064922B69BE300E7BC7A /* SceneKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12805E922B68EE600E7BC7A /* SceneKind.swift */; };
+		F128064A22B69BE300E7BC7A /* SceneKind+Getter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12805EA22B68EE600E7BC7A /* SceneKind+Getter.swift */; };
+		F128064B22B69BE300E7BC7A /* SceneRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12805E422B68EE600E7BC7A /* SceneRunner.swift */; };
+		F128064C22B69BE300E7BC7A /* SceneRunner+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12805E522B68EE600E7BC7A /* SceneRunner+Type.swift */; };
+		F128064D22B69BE300E7BC7A /* SceneRunner+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12805E622B68EE600E7BC7A /* SceneRunner+Action.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,19 +52,19 @@
 			remoteGlobalIDString = F12805BC22B68E7200E7BC7A;
 			remoteInfo = TestRunnerExample;
 		};
-		F128061722B68F7E00E7BC7A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F12805B522B68E7200E7BC7A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F128061122B68F7E00E7BC7A;
-			remoteInfo = TestRunnerIOS;
-		};
 		F128063322B6959400E7BC7A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F12805B522B68E7200E7BC7A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F12805BC22B68E7200E7BC7A;
 			remoteInfo = TestRunnerExample;
+		};
+		F128064522B69B5E00E7BC7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F12805B522B68E7200E7BC7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F128061122B68F7E00E7BC7A;
+			remoteInfo = TestRunnerIOS;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -75,7 +75,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F128061A22B68F7E00E7BC7A /* TestRunnerIOS.framework in Embed Frameworks */,
+				F128064422B69B5E00E7BC7A /* TestRunnerIOS.framework in Embed Frameworks */,
 				F128060B22B68F0E00E7BC7A /* Iterator_IOS.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -128,7 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F128061922B68F7E00E7BC7A /* TestRunnerIOS.framework in Frameworks */,
+				F128064322B69B5E00E7BC7A /* TestRunnerIOS.framework in Frameworks */,
 				F128060A22B68F0E00E7BC7A /* Iterator_IOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,20 +215,12 @@
 			isa = PBXGroup;
 			children = (
 				F12805E222B68EE600E7BC7A /* Scene.swift */,
-				F12805E322B68EE600E7BC7A /* runner */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		F12805E322B68EE600E7BC7A /* runner */ = {
-			isa = PBXGroup;
-			children = (
 				F12805E722B68EE600E7BC7A /* protocol */,
 				F12805E422B68EE600E7BC7A /* SceneRunner.swift */,
 				F12805E522B68EE600E7BC7A /* SceneRunner+Type.swift */,
 				F12805E622B68EE600E7BC7A /* SceneRunner+Action.swift */,
 			);
-			path = runner;
+			path = src;
 			sourceTree = "<group>";
 		};
 		F12805E722B68EE600E7BC7A /* protocol */ = {
@@ -333,7 +325,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				F128061822B68F7E00E7BC7A /* PBXTargetDependency */,
+				F128064622B69B5E00E7BC7A /* PBXTargetDependency */,
 			);
 			name = TestRunnerExample;
 			productName = TestRunnerExample;
@@ -510,13 +502,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F128062122B68FA900E7BC7A /* SceneRunner+Type.swift in Sources */,
-				F128062022B68FA900E7BC7A /* SceneRunner.swift in Sources */,
-				F128062322B68FA900E7BC7A /* SceneRunnerKind.swift in Sources */,
-				F128062522B68FA900E7BC7A /* SceneKind+Getter.swift in Sources */,
-				F128063D22B698DB00E7BC7A /* Scene.swift in Sources */,
-				F128062422B68FA900E7BC7A /* SceneKind.swift in Sources */,
-				F128062222B68FA900E7BC7A /* SceneRunner+Action.swift in Sources */,
+				F128064C22B69BE300E7BC7A /* SceneRunner+Type.swift in Sources */,
+				F128064822B69BE300E7BC7A /* SceneRunnerKind.swift in Sources */,
+				F128064922B69BE300E7BC7A /* SceneKind.swift in Sources */,
+				F128064722B69BE300E7BC7A /* Scene.swift in Sources */,
+				F128064A22B69BE300E7BC7A /* SceneKind+Getter.swift in Sources */,
+				F128064B22B69BE300E7BC7A /* SceneRunner.swift in Sources */,
+				F128064D22B69BE300E7BC7A /* SceneRunner+Action.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,15 +528,15 @@
 			target = F12805BC22B68E7200E7BC7A /* TestRunnerExample */;
 			targetProxy = F12805D222B68E7400E7BC7A /* PBXContainerItemProxy */;
 		};
-		F128061822B68F7E00E7BC7A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F128061122B68F7E00E7BC7A /* TestRunnerIOS */;
-			targetProxy = F128061722B68F7E00E7BC7A /* PBXContainerItemProxy */;
-		};
 		F128063422B6959400E7BC7A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F12805BC22B68E7200E7BC7A /* TestRunnerExample */;
 			targetProxy = F128063322B6959400E7BC7A /* PBXContainerItemProxy */;
+		};
+		F128064622B69B5E00E7BC7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F128061122B68F7E00E7BC7A /* TestRunnerIOS */;
+			targetProxy = F128064522B69B5E00E7BC7A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

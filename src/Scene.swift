@@ -9,7 +9,7 @@ open class Scene: SceneKind {
       self.sceneRunner = sceneRunner
    }
    /**
-    * Run
+    * Run the scene
     */
    public func run(){
       fatalError("Must be implemented by super-type")

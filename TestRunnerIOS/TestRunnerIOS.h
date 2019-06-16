@@ -1,10 +1,3 @@
-//
-//  TestRunnerIOS.h
-//  TestRunnerIOS
-//
-//  Created by Eon on 16/06/2019.
-//  Copyright © 2019 FutureLab. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
 
