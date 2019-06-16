@@ -1,5 +1,4 @@
 import XCTest
-import TestRunner
 /**
  * Creates screenshots for the fastlane/snapshot suite (By making UI actions and then recording the screenshots)
  */
