@@ -11,7 +11,7 @@ open class Scene: SceneKind {
    /**
     * Run the scene
     */
-   public func run(){
+   open func run(){
       fatalError("Must be implemented by super-type")
    }
 }
