@@ -1,6 +1,6 @@
 import Foundation
 
-public class Scene: SceneKind {
+open class Scene: SceneKind {
    public let sceneRunner: SceneRunnerKind
    /**
     * - Parameter scenerunner: a reference to the "sequencer" of the scenes
