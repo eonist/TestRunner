@@ -41,6 +41,7 @@
 		F128063122B6959400E7BC7A /* TestRunnerExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F128063022B6959400E7BC7A /* TestRunnerExampleTests.swift */; };
 		F128063822B695B600E7BC7A /* TestRunnerIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F128061222B68F7E00E7BC7A /* TestRunnerIOS.framework */; };
 		F128063922B695CF00E7BC7A /* Iterator_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F128060922B68F0D00E7BC7A /* Iterator_IOS.framework */; };
+		F128063D22B698DB00E7BC7A /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12805E222B68EE600E7BC7A /* Scene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -513,6 +514,7 @@
 				F128062022B68FA900E7BC7A /* SceneRunner.swift in Sources */,
 				F128062322B68FA900E7BC7A /* SceneRunnerKind.swift in Sources */,
 				F128062522B68FA900E7BC7A /* SceneKind+Getter.swift in Sources */,
+				F128063D22B698DB00E7BC7A /* Scene.swift in Sources */,
 				F128062422B68FA900E7BC7A /* SceneKind.swift in Sources */,
 				F128062222B68FA900E7BC7A /* SceneRunner+Action.swift in Sources */,
 			);
