@@ -1,0 +1,9 @@
+{
+  "commitish" : "3dbd71c38e886eb6a09b5b919137b1e4d7e315e6",
+  "iOS" : [
+    {
+      "name" : "Iterator_IOS",
+      "hash" : "9bc70c195ce1091b12a01b4a8441ed9f956e152d075edc6b7075f10b8f721e77"
+    }
+  ]
+}

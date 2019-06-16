@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>TestRunner-iOS.xcscheme_^#shared#^_</key>
+		<key>Iterator-IOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>TestRunnerExample.xcscheme_^#shared#^_</key>
+		<key>IteratorExample.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -17,7 +17,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>F128054622B684D000E7BC7A</key>
+		<key>F12804A222B653E200E7BC7A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

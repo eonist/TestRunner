@@ -1,0 +1,83 @@
+BCSymbolMap Version: 2.0
+__swift_dead_method_stub
+_symbolic $s12Iterator_IOS10ReversableP
+_$s12Iterator_IOS10Reversable_pMF
+_$s12Iterator_IOSMXM
+_$s12Iterator_IOS10IteratableMp
+_symbolic x
+_$s12Iterator_IOS10ReversableMp
+__swift_FORCE_LOAD_$_swiftFoundation_$_Iterator_IOS
+__swift_FORCE_LOAD_$_swiftDarwin_$_Iterator_IOS
+__swift_FORCE_LOAD_$_swiftObjectiveC_$_Iterator_IOS
+__swift_FORCE_LOAD_$_swiftCoreFoundation_$_Iterator_IOS
+__swift_FORCE_LOAD_$_swiftDispatch_$_Iterator_IOS
+__swift_FORCE_LOAD_$_swiftCoreGraphics_$_Iterator_IOS
+__swift_FORCE_LOAD_$_swiftUIKit_$_Iterator_IOS
+__swift_FORCE_LOAD_$_swiftCoreImage_$_Iterator_IOS
+__swift_FORCE_LOAD_$_swiftMetal_$_Iterator_IOS
+__swift_FORCE_LOAD_$_swiftQuartzCore_$_Iterator_IOS
+___swift_reflection_version
+_$s12Iterator_IOS10ReversableTL
+_$s12Iterator_IOS10ReversablePAA10IteratableTb
+Apple LLVM version 10.0.1 (clang-1001.0.46.3)
+<swift-imported-modules>
+/Users/eon/Documents/dev/_modules/TestRunner/Carthage/Checkouts/Iterator
+Apple Swift version 5.0 (swiftlang-1001.0.69.5 clang-1001.0.46.3)
+/Users/eon/Documents/dev/_modules/TestRunner/Carthage/Checkouts/Iterator/src/Reversable.swift
+$s12Iterator_IOS05ArrayA0C5indexSivpfi
+<compiler-generated>
+_symbolic $s12Iterator_IOS10IteratableP
+_$s12Iterator_IOS10Iteratable_pMF
+_$s12Iterator_IOS10IteratableTL
+_$s1T12Iterator_IOS10IteratablePTl
+/Users/eon/Documents/dev/_modules/TestRunner/Carthage/Checkouts/Iterator/src/Iteratable.swift
+_$s12Iterator_IOS012ReverseArrayA0CyxGAA10ReversableAAWI
+_$s12Iterator_IOS012ReverseArrayA0CMi
+_$s12Iterator_IOS012ReverseArrayA0CMr
+_$s12Iterator_IOS012ReverseArrayA0CyxGAA10ReversableAAWp
+_$s12Iterator_IOS05ArrayA0CyxGAA10IteratableAAMc
+_symbolic 12Iterator_IOS05ArrayA0CyxG
+_$s12Iterator_IOS012ReverseArrayA0CMI
+_$s12Iterator_IOS012ReverseArrayA0CMP
+_symbolic _____ 12Iterator_IOS012ReverseArrayA0C
+_$s12Iterator_IOS012ReverseArrayA0CMF
+_$s12Iterator_IOS012ReverseArrayA0CyxGAA10ReversableAAMc
+_$s12Iterator_IOS012ReverseArrayA0C7hasPrevSbyFTq
+_$s12Iterator_IOS012ReverseArrayA0C4prevxyFTq
+/Users/eon/Documents/dev/_modules/TestRunner/Carthage/Checkouts/Iterator/src/ReverseArrayIterator.swift
+$s12Iterator_IOS012ReverseArrayA0CMr
+$s12Iterator_IOS012ReverseArrayA0CMi
+$s12Iterator_IOS012ReverseArrayA0CyxGAA10ReversableAAWI
+deinit
+ReverseArrayIterator.swift
+/Users/eon/Documents/dev/_modules/TestRunner/Carthage/Checkouts/Iterator/src
+init
+$s12Iterator_IOS012ReverseArrayA0CMa
+_$s12Iterator_IOS05ArrayA0CMi
+_$s12Iterator_IOS05ArrayA0CMr
+_$s12Iterator_IOS05ArrayA0CyxGAA10IteratableAAWp
+_$s12Iterator_IOS05ArrayA0C5indexSivpWvd
+_$s12Iterator_IOS05ArrayA0C10collectionSayxGvpWvd
+_$s12Iterator_IOS05ArrayA0CMI
+_$s12Iterator_IOS05ArrayA0CMP
+_symbolic _____ 12Iterator_IOS05ArrayA0C
+_symbolic Si
+_symbolic SayxG
+_$s12Iterator_IOS05ArrayA0CMF
+_symbolic 12Iterator_IOS05ArrayA0C
+_$s12Iterator_IOS05ArrayA0CyxGAA10IteratableAAMA
+_$s12Iterator_IOS05ArrayA0C5indexSivgTq
+_$s12Iterator_IOS05ArrayA0C5indexSivsTq
+_$s12Iterator_IOS05ArrayA0C5indexSivMTq
+_$s12Iterator_IOS05ArrayA0C10collectionSayxGvgTq
+_$s12Iterator_IOS05ArrayA0C10collectionSayxGvsTq
+_$s12Iterator_IOS05ArrayA0C10collectionSayxGvMTq
+/Users/eon/Documents/dev/_modules/TestRunner/Carthage/Checkouts/Iterator/src/ArrayIterator.swift
+$s12Iterator_IOS05ArrayA0CMr
+$s12Iterator_IOS05ArrayA0CMi
+ArrayIterator.swift
+$s12Iterator_IOS05ArrayA0CMa
+reset
+next
+hasNext
+/Users/eon/Library/Caches/org.carthage.CarthageKit/DerivedData/10.2_10E125/Iterator/4b0095baf6429847d6d01361b7b50af2fcc9bd70/Build/Intermediates.noindex/ArchiveIntermediates/Iterator-IOS/IntermediateBuildFilesPath/IteratorExample.build/Release-iphoneos/Iterator-IOS.build/DerivedSources/Iterator_IOS_vers.c
