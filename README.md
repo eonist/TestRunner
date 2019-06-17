@@ -31,7 +31,7 @@ albumCoverSequence.onComplete { Swift.print("All scenes completed 🏁") }
 ```
 
 ### Todo:
-- Setup repo 👈
-- Add example project
-- Add carthage support
-- Add AsyncIterator as external dep
+- Setup repo ✅
+- Add example project 👈
+- Add carthage support ✅
+- Add AsyncIterator as external dep ✅
