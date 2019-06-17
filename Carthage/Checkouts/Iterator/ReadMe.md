@@ -1,6 +1,6 @@
 # Iterator
 
-Array Iterator that can also be used with async tasks
+This iterator class can be used for iterating simple arrays, or handle async local / remote services. 
 
 ### How does it work
 - Async iteration
@@ -19,7 +19,40 @@ while arrIterator.hasNext() { Swift.print(arrIterator.next()) }//1,2,3,4,5
 ```
 
 ### Async Example:
+Here is an example where the iterator is used to iterate a simulated remote service.
 ```swift
+/**
+ * Demonstrates async iterator
+ */
+class DemoIterator: ArrayIterator<DemoItem> {
+    var complete: Completed
+    init(array: Array<T>, onComplete:@escaping Completed) {
+        self.complete = onComplete
+        super.init(array: array)
+    }
+}
+/**
+ * Extension
+ */
+extension DemoIterator {
+    typealias Completed = () -> Void
+    func iterate(callBack:@escaping (_ item: DemoItem, _ success: Bool) -> Void){
+        Swift.print("iterate")
+        if hasNext() {
+            let item: DemoItem = next()
+            DispatchQueue.global(qos: .background).async {
+                sleep(2)/*Simulates some remote service taking 2.0 sec*/
+                let eitherOr: Bool = arc4random_uniform(2) == 0/*heads or tails*/
+                Swift.print("Doing some work 💪, success: \(eitherOr ? "✅" : "🚫")")
+                callBack(item, eitherOr)
+            }
+        } else {
+            complete()
+        }
+    }
+}
+struct DemoItem{}
+
 /**
  * ## Examples:
  * DemoIteratorExample().iterate() //All done: 🎉 2

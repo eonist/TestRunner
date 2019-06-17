@@ -1,5 +1,5 @@
 import Foundation
-
+import <#module#>
 
 class LoginScene: Scene {
     ///

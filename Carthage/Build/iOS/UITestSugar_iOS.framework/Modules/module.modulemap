@@ -1,0 +1,11 @@
+framework module UITestSugar_iOS {
+  umbrella header "UITestSugar_iOS.h"
+
+  export *
+  module * { export * }
+}
+
+module UITestSugar_iOS.Swift {
+    header "UITestSugar_iOS-Swift.h"
+    requires objc
+}

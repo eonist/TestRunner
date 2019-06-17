@@ -1,0 +1,22 @@
+BCSymbolMap Version: 2.0
+__swift_FORCE_LOAD_$_swiftFoundation_$_UITestSugar_iOS
+__swift_FORCE_LOAD_$_swiftDarwin_$_UITestSugar_iOS
+__swift_FORCE_LOAD_$_swiftObjectiveC_$_UITestSugar_iOS
+__swift_FORCE_LOAD_$_swiftCoreFoundation_$_UITestSugar_iOS
+__swift_FORCE_LOAD_$_swiftDispatch_$_UITestSugar_iOS
+__swift_FORCE_LOAD_$_swiftCoreGraphics_$_UITestSugar_iOS
+__swift_FORCE_LOAD_$_swiftUIKit_$_UITestSugar_iOS
+__swift_FORCE_LOAD_$_swiftCoreImage_$_UITestSugar_iOS
+__swift_FORCE_LOAD_$_swiftMetal_$_UITestSugar_iOS
+__swift_FORCE_LOAD_$_swiftQuartzCore_$_UITestSugar_iOS
+___swift_reflection_version
+Apple LLVM version 10.0.1 (clang-1001.0.46.5)
+<swift-imported-modules>
+/Users/andrejorgensen/Documents/dev/_modules/TestRunner/Carthage/Checkouts/UITestSugar
+Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)
+/Users/andrejorgensen/Documents/dev/_modules/TestRunner/Carthage/Checkouts/UITestSugar/src/Sleep.swift
+sleep
+Sleep.swift
+/Users/andrejorgensen/Documents/dev/_modules/TestRunner/Carthage/Checkouts/UITestSugar/src
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+/Users/andrejorgensen/Library/Caches/org.carthage.CarthageKit/DerivedData/10.2.1_10E1001/UITestSugar/118d86902258c2ff1316fbfb56de9aa970aa534c/Build/Intermediates.noindex/ArchiveIntermediates/UITestSugar-iOS/IntermediateBuildFilesPath/UITestSugar.build/Release-iphoneos/UITestSugar-iOS.build/DerivedSources/UITestSugar_iOS_vers.c

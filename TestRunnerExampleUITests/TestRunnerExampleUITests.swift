@@ -1,12 +1,5 @@
-//
-//  TestRunnerExampleUITests.swift
-//  TestRunnerExampleUITests
-//
-//  Created by Eon on 16/06/2019.
-//  Copyright © 2019 FutureLab. All rights reserved.
-//
-
 import XCTest
+import TestRunnerIOS
 
 class TestRunnerExampleUITests: XCTestCase {
 

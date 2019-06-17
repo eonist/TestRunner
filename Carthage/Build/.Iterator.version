@@ -1,9 +1,10 @@
 {
-  "commitish" : "3dbd71c38e886eb6a09b5b919137b1e4d7e315e6",
+  "commitish" : "ff406bc51a6ea24dd905db56293cb092e67eda33",
   "iOS" : [
     {
       "name" : "Iterator_IOS",
-      "hash" : "9bc70c195ce1091b12a01b4a8441ed9f956e152d075edc6b7075f10b8f721e77"
+      "hash" : "019d556773e1057481e7557cb774e7f307478dfa5a8cd9a7c22d4a702eaf4247",
+      "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
     }
   ]
 }

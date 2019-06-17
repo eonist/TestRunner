@@ -1,1 +1,2 @@
 github "eonist/Iterator" "master"
+github "eonist/UITestSugar" "master"
