@@ -7,16 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D3F1E5822B7B03200C7F5C0 /* SceneRunner+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3F1E4C22B7B03100C7F5C0 /* SceneRunner+User.swift */; };
-		9D3F1E5922B7B03200C7F5C0 /* SnapShotMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3F1E4D22B7B03100C7F5C0 /* SnapShotMaker.swift */; };
-		9D3F1E5A22B7B03200C7F5C0 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3F1E4F22B7B03100C7F5C0 /* SnapshotHelper.swift */; };
-		9D3F1E5B22B7B03200C7F5C0 /* LoginScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3F1E5122B7B03200C7F5C0 /* LoginScene.swift */; };
-		9D3F1E5C22B7B03200C7F5C0 /* OAuthLoginScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3F1E5222B7B03200C7F5C0 /* OAuthLoginScene.swift */; };
-		9D3F1E5D22B7B03200C7F5C0 /* TabBarScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3F1E5322B7B03200C7F5C0 /* TabBarScene.swift */; };
-		9D3F1E5E22B7B03200C7F5C0 /* LogoutScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3F1E5422B7B03200C7F5C0 /* LogoutScene.swift */; };
-		9D3F1E5F22B7B03200C7F5C0 /* SceneRunner+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3F1E5522B7B03200C7F5C0 /* SceneRunner+User.swift */; };
-		9D3F1E6022B7B03200C7F5C0 /* FeaturePlayListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3F1E5622B7B03200C7F5C0 /* FeaturePlayListScene.swift */; };
-		9D3F1E6122B7B03200C7F5C0 /* SearchScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3F1E5722B7B03200C7F5C0 /* SearchScene.swift */; };
+		9D3F1E6222B7B19E00C7F5C0 /* UITestSugar_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF4356922B7AA0100996EE7 /* UITestSugar_iOS.framework */; };
+		9D3F1E6322B7B1A100C7F5C0 /* Iterator_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF4356822B7AA0000996EE7 /* Iterator_IOS.framework */; };
+		9D87BE3D22B7B27D009E99B3 /* TestRunnerIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF4357422B7AA6800996EE7 /* TestRunnerIOS.framework */; };
 		9DF4354922B7A99200996EE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF4354822B7A99200996EE7 /* AppDelegate.swift */; };
 		9DF4354B22B7A99200996EE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF4354A22B7A99200996EE7 /* ViewController.swift */; };
 		9DF4354E22B7A99200996EE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF4354C22B7A99200996EE7 /* Main.storyboard */; };
@@ -92,16 +85,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9D3F1E4C22B7B03100C7F5C0 /* SceneRunner+User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SceneRunner+User.swift"; sourceTree = "<group>"; };
-		9D3F1E4D22B7B03100C7F5C0 /* SnapShotMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapShotMaker.swift; sourceTree = "<group>"; };
-		9D3F1E4F22B7B03100C7F5C0 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
-		9D3F1E5122B7B03200C7F5C0 /* LoginScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScene.swift; sourceTree = "<group>"; };
-		9D3F1E5222B7B03200C7F5C0 /* OAuthLoginScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthLoginScene.swift; sourceTree = "<group>"; };
-		9D3F1E5322B7B03200C7F5C0 /* TabBarScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarScene.swift; sourceTree = "<group>"; };
-		9D3F1E5422B7B03200C7F5C0 /* LogoutScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutScene.swift; sourceTree = "<group>"; };
-		9D3F1E5522B7B03200C7F5C0 /* SceneRunner+User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SceneRunner+User.swift"; sourceTree = "<group>"; };
-		9D3F1E5622B7B03200C7F5C0 /* FeaturePlayListScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturePlayListScene.swift; sourceTree = "<group>"; };
-		9D3F1E5722B7B03200C7F5C0 /* SearchScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchScene.swift; sourceTree = "<group>"; };
 		9DF4354522B7A99200996EE7 /* TestRunnerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestRunnerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF4354822B7A99200996EE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DF4354A22B7A99200996EE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +127,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D87BE3D22B7B27D009E99B3 /* TestRunnerIOS.framework in Frameworks */,
+				9D3F1E6222B7B19E00C7F5C0 /* UITestSugar_iOS.framework in Frameworks */,
+				9D3F1E6322B7B1A100C7F5C0 /* Iterator_IOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,28 +154,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9D3F1E4E22B7B03100C7F5C0 /* common */ = {
-			isa = PBXGroup;
-			children = (
-				9D3F1E4F22B7B03100C7F5C0 /* SnapshotHelper.swift */,
-			);
-			path = common;
-			sourceTree = "<group>";
-		};
-		9D3F1E5022B7B03200C7F5C0 /* scene */ = {
-			isa = PBXGroup;
-			children = (
-				9D3F1E5122B7B03200C7F5C0 /* LoginScene.swift */,
-				9D3F1E5222B7B03200C7F5C0 /* OAuthLoginScene.swift */,
-				9D3F1E5322B7B03200C7F5C0 /* TabBarScene.swift */,
-				9D3F1E5422B7B03200C7F5C0 /* LogoutScene.swift */,
-				9D3F1E5522B7B03200C7F5C0 /* SceneRunner+User.swift */,
-				9D3F1E5622B7B03200C7F5C0 /* FeaturePlayListScene.swift */,
-				9D3F1E5722B7B03200C7F5C0 /* SearchScene.swift */,
-			);
-			path = scene;
-			sourceTree = "<group>";
-		};
 		9DF4353C22B7A99200996EE7 = {
 			isa = PBXGroup;
 			children = (
@@ -232,10 +196,6 @@
 		9DF4355C22B7A99200996EE7 /* TestRunnerExampleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				9D3F1E4E22B7B03100C7F5C0 /* common */,
-				9D3F1E5022B7B03200C7F5C0 /* scene */,
-				9D3F1E4C22B7B03100C7F5C0 /* SceneRunner+User.swift */,
-				9D3F1E4D22B7B03100C7F5C0 /* SnapShotMaker.swift */,
 				9DF4355D22B7A99200996EE7 /* TestRunnerExampleUITests.swift */,
 				9DF4355F22B7A99200996EE7 /* Info.plist */,
 			);
@@ -472,17 +432,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D3F1E5D22B7B03200C7F5C0 /* TabBarScene.swift in Sources */,
-				9D3F1E5C22B7B03200C7F5C0 /* OAuthLoginScene.swift in Sources */,
 				9DF4355E22B7A99200996EE7 /* TestRunnerExampleUITests.swift in Sources */,
-				9D3F1E5822B7B03200C7F5C0 /* SceneRunner+User.swift in Sources */,
-				9D3F1E5E22B7B03200C7F5C0 /* LogoutScene.swift in Sources */,
-				9D3F1E5F22B7B03200C7F5C0 /* SceneRunner+User.swift in Sources */,
-				9D3F1E5922B7B03200C7F5C0 /* SnapShotMaker.swift in Sources */,
-				9D3F1E6122B7B03200C7F5C0 /* SearchScene.swift in Sources */,
-				9D3F1E6022B7B03200C7F5C0 /* FeaturePlayListScene.swift in Sources */,
-				9D3F1E5A22B7B03200C7F5C0 /* SnapshotHelper.swift in Sources */,
-				9D3F1E5B22B7B03200C7F5C0 /* LoginScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -719,6 +669,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TXKCF76Y2G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TestRunnerExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -739,6 +693,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TXKCF76Y2G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TestRunnerExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
