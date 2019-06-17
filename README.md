@@ -4,8 +4,9 @@ Simplifies running UI-tests
 
 ### How does it work
 - Make scenes you can play and get notified on their completion (async)
-- Iterate through schenes in sequences
+- Iterate through scenes in sequences
 - Reuse common scenes like login and logout
+- Works asynchronously
 
 ### How do I get it
 - Carthage `github "eonist/TestRunner"`
