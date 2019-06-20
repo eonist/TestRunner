@@ -14,5 +14,8 @@ searchedElement.exists // true , false
 searchedElement.firstMatch.tap()
 ```
 
+### Note:
+When you make frameworks that import XCTest, you need to add the correct framework search path in build settings see: [https://stackoverflow.com/questions/44665656/creating-a-framework-that-uses-xctest](https://stackoverflow.com/questions/44665656/creating-a-framework-that-uses-xctest) 
+
 ### Todo:
 - Add tests

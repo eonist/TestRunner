@@ -3,12 +3,12 @@ import Foundation
  * ## EXAMPLES:
  * var arrIterator = ArrayIterator(array:[1,2,3,4,5])
  * while arrIterator.hasNext() {Swift.print(arrIterator.next())}//1,2,3,4,5
- * - TODO: ⚠️️ make the ReverseArrayIterator...see notes
+ * - Fixme: ⚠️️ make the ReverseArrayIterator...see notes
  */
 open class ArrayIterator<T> {
    var index: Int = 0
-   public var collection: Array<T>
-   public init(array: Array<T>) {
+   public var collection: [T]
+   public init(array: [T]) {
       self.collection = array
    }
    public func hasNext() -> Bool {
@@ -32,4 +32,3 @@ extension ArrayIterator: Iteratable {}
 //        while arrIterator.hasNext() {
 //            Swift.print(arrIterator.next())
 //        }
-

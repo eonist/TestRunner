@@ -1,11 +1,11 @@
 import Foundation
-import Iterator_IOS
+import IteratorIOS
 /**
  * Demonstrates async iterator
  */
 class DemoIterator: ArrayIterator<DemoItem> {
     var complete: Completed
-    init(array: Array<DemoItem>, onComplete:@escaping Completed) {
+    init(array: [DemoItem], onComplete:@escaping Completed) {
         self.complete = onComplete
         super.init(array: array)
     }

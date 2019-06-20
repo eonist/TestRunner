@@ -1,7 +1,7 @@
 import Foundation
 
 open class ReverseArrayIterator<T>: ArrayIterator<T> {
-    func hasPrev() -> Bool{
+    func hasPrev() -> Bool {
         return index > 0
     }
     /**

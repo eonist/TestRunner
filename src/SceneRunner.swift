@@ -1,13 +1,13 @@
 import Foundation
-import Iterator_IOS
+import IteratorIOS
 import XCTest
 /**
- * Abstract: SceneRunner plays through scenes like a playlist
+ * - Abstract: SceneRunner plays through scenes like a playlist
  * ## Examples:
  * SceneRunner(scenes: [LoginScene.self, LogoutScene.self],  user: (" ", " ")) {Swift.print("All scenes completed 🏁") }.iterate(callBack: { _,_  in })
  */
 public class SceneRunner: ArrayIterator<SceneKind.Type>, SceneRunnerKind {
-   lazy public var app: XCUIApplication = { // Convenient accessor to the app
+   public lazy var app: XCUIApplication = { // Convenient accessor to the app
       let app = XCUIApplication()
       app.launch()
       return app
@@ -21,7 +21,7 @@ public class SceneRunner: ArrayIterator<SceneKind.Type>, SceneRunnerKind {
     * - Parameter onComplete: A callback that notifies the user when the sequence has completed
     */
    @discardableResult
-   public init(sequence: Array<SceneKind.Type>, user: User, onComplete:@escaping Completed) {
+   public init(sequence: [SceneKind.Type], user: User, onComplete:@escaping Completed) {
       self.user = user
       self.complete = onComplete
       super.init(array: sequence)
