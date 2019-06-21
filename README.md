@@ -1,21 +1,37 @@
-# UITestSugar
-Sugar for UITesting
+# TestRunner 🏃
+
+Simplifies running UI-tests 
+
+### How does it work
+- Make scenes you can play and get notified on their completion (async)
+- Iterate through scenes in sequences
+- Reuse common scenes like login and logout
+- Works asynchronously
 
 ### How do I get it
-- Carthage `github "eonist/UITestSugar"`
+- Carthage `github "eonist/TestRunner"`
 - Manual Open `.xcodeproj`
 - CocoaPod (Coming soon)
 
 ### Example:
 ```swift
-let app = XCUIApplication()
-let searchedElement = app.filterElements(containing: "Sugar", "500 g").element
-searchedElement.exists // true , false
-searchedElement.firstMatch.tap()
+class SearchScene {
+  override run(){
+    let searchBar = XTElement.findFirst("SearchBar")
+    searchBar.search("Eminem")
+    let searchButton = XTElement.findFirst("SearchButton")
+    searchButton.tap()
+    onComplete()
+  }
+}
+let albumCoverSequence: [SceneKind.Type] = [LoginScene.self, SearchScene.self, LogoutScene.self]
+albumCoverSequence.run() // 🏃
+albumCoverSequence.first { $0.type == SearchScene.self }.onComplete { Swift.print("SearchScene ✅") }
+albumCoverSequence.onComplete { Swift.print("All scenes completed 🏁") }
 ```
 
-### Note:
-When you make frameworks that import XCTest, you need to add the correct framework search path in build settings see: [https://stackoverflow.com/questions/44665656/creating-a-framework-that-uses-xctest](https://stackoverflow.com/questions/44665656/creating-a-framework-that-uses-xctest) 
-
 ### Todo:
-- Add tests
+- Setup repo ✅
+- Add example project 👈
+- Add carthage support ✅
+- Add AsyncIterator as external dep ✅
