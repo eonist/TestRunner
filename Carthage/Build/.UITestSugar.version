@@ -3,7 +3,7 @@
   "iOS" : [
     {
       "name" : "UITestSugar",
-      "hash" : "ad11e51360789801f58686b518ae62d3bb4226b9471bfa090496de95810d0f7b",
+      "hash" : "7b414e7cebb2be3a03cd8480c1d4d9c1d043180aa68d94f971a34a01c2505ea9",
       "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
     }
   ]

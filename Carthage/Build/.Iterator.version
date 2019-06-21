@@ -3,7 +3,7 @@
   "iOS" : [
     {
       "name" : "IteratorIOS",
-      "hash" : "f014e0ade33a723adff3ac51f6fabb24d9ef458176995e913efa9236818de98d",
+      "hash" : "3f1dffcee6573a5eaef6e4dd969e03642e3a70a222472dbd46aa355c15e80e3b",
       "swiftToolchainVersion" : "5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
     }
   ]
