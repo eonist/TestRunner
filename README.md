@@ -24,10 +24,10 @@ class SearchScene {
     onComplete()
   }
 }
-let albumCoverSequence: [SceneKind.Type] = [LoginScene.self, SearchScene.self, LogoutScene.self]
-albumCoverSequence.run() // 🏃
-albumCoverSequence.first { $0.type == SearchScene.self }.onComplete { Swift.print("SearchScene ✅") }
-albumCoverSequence.onComplete { Swift.print("All scenes completed 🏁") }
+let sequence: [SceneKind.Type] = [LoginScene.self, SearchScene.self, LogoutScene.self]
+let runner: SceneRunner = .init(sequence: sequence, user: (username:"John", password:"Little") , onComplete: {})
+runner.complete { Swift.print("All scenes completed 🏁") }
+runner.iterate() // 🏃
 ```
 
 ### Todo:
