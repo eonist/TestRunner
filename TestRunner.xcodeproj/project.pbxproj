@@ -17,6 +17,7 @@
 		9D56A65C22BCF3CD00A7B01C /* SceneRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D56A65522BCF3CD00A7B01C /* SceneRunner.swift */; };
 		9D56A65D22BCF3CD00A7B01C /* SceneRunner+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D56A65622BCF3CD00A7B01C /* SceneRunner+Type.swift */; };
 		9D56A65E22BCF3CD00A7B01C /* SceneRunner+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D56A65722BCF3CD00A7B01C /* SceneRunner+Action.swift */; };
+		9D56A67922BD2F8600A7B01C /* SceneRunner+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D56A67822BD2F8600A7B01C /* SceneRunner+Create.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		9D56A65522BCF3CD00A7B01C /* SceneRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneRunner.swift; sourceTree = "<group>"; };
 		9D56A65622BCF3CD00A7B01C /* SceneRunner+Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SceneRunner+Type.swift"; sourceTree = "<group>"; };
 		9D56A65722BCF3CD00A7B01C /* SceneRunner+Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SceneRunner+Action.swift"; sourceTree = "<group>"; };
+		9D56A67822BD2F8600A7B01C /* SceneRunner+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneRunner+Create.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				9D56A65522BCF3CD00A7B01C /* SceneRunner.swift */,
 				9D56A65622BCF3CD00A7B01C /* SceneRunner+Type.swift */,
 				9D56A65722BCF3CD00A7B01C /* SceneRunner+Action.swift */,
+				9D56A67822BD2F8600A7B01C /* SceneRunner+Create.swift */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				9D56A65922BCF3CD00A7B01C /* SceneRunnerKind.swift in Sources */,
 				9D56A65822BCF3CD00A7B01C /* Scene.swift in Sources */,
+				9D56A67922BD2F8600A7B01C /* SceneRunner+Create.swift in Sources */,
 				9D56A65A22BCF3CD00A7B01C /* SceneKind.swift in Sources */,
 				9D56A65E22BCF3CD00A7B01C /* SceneRunner+Action.swift in Sources */,
 				9D56A65D22BCF3CD00A7B01C /* SceneRunner+Type.swift in Sources */,
