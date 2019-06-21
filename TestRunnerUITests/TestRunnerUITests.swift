@@ -30,7 +30,6 @@ class TestRunnerUITests: XCTestCase {
       Swift.print("homeNavButton:  \(homeNavButton)")
       //      let numOfHittableElements = XCUIApplication().descendants(matching: .any).hittableElements.count
       //      Swift.print("numOfHittableElements:  \(numOfHittableElements)")
-      
       //      let app = XCUIApplication()
       //      let searchedElement = app.filterElements(containing: "Sugar", "500 g").element
       //      let elementExists = searchedElement.exists // true , false
@@ -40,5 +39,3 @@ class TestRunnerUITests: XCTestCase {
       //         Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 }
-
-//
