@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "519E3D531FECAFBA009DD741"
-               BuildableName = "TestingRun.framework"
-               BlueprintName = "TestingRun"
-               ReferencedContainer = "container:TestingRun.xcodeproj">
+               BuildableName = "TestRunner.framework"
+               BlueprintName = "TestRunner"
+               ReferencedContainer = "container:TestRunner.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "519E3D531FECAFBA009DD741"
-            BuildableName = "TestingRun.framework"
-            BlueprintName = "TestingRun"
-            ReferencedContainer = "container:TestingRun.xcodeproj">
+            BuildableName = "TestRunner.framework"
+            BlueprintName = "TestRunner"
+            ReferencedContainer = "container:TestRunner.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "519E3D531FECAFBA009DD741"
-            BuildableName = "TestingRun.framework"
-            BlueprintName = "TestingRun"
-            ReferencedContainer = "container:TestingRun.xcodeproj">
+            BuildableName = "TestRunner.framework"
+            BlueprintName = "TestRunner"
+            ReferencedContainer = "container:TestRunner.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -73,9 +73,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "519E3D531FECAFBA009DD741"
-            BuildableName = "TestingRun.framework"
-            BlueprintName = "TestingRun"
-            ReferencedContainer = "container:TestingRun.xcodeproj">
+            BuildableName = "TestRunner.framework"
+            BlueprintName = "TestRunner"
+            ReferencedContainer = "container:TestRunner.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
