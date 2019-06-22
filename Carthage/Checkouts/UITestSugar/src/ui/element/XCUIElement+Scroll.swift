@@ -22,9 +22,9 @@ extension XCUIElement {
     * findElement(query:...,identifier:"Featured Playlists-View all")
     */
    public func findElement(query: XCUIElementQuery, identifier: String) -> XCUIElement? {
-      let elements: [XCUIElement] = XCUIElement.elements(query:query)
+      let elements: [XCUIElement] = XCUIElement.elements(query: query)
       //        Swift.print("elements.count:  \(elements.count)")
-      let result = elements.first(where: { $0.identifier == identifier })
+      let result = elements.first { $0.identifier == identifier }
       return result
    }
    /**

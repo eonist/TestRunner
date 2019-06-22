@@ -5,13 +5,13 @@ open class Scene: SceneKind {
    /**
     * - Parameter scenerunner: a reference to the "sequencer" of the scenes
     */
-   required public init(sceneRunner: SceneRunnerKind) {
+   public required init(sceneRunner: SceneRunnerKind) {
       self.sceneRunner = sceneRunner
    }
    /**
     * Run the scene
     */
-   open func run(){
+   open func run() {
       fatalError("Must be implemented by super-type")
    }
 }
