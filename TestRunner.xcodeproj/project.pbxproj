@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		519E3D651FECAFBA009DD741 /* UITestSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 519E3D571FECAFBA009DD741 /* UITestSugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		519E3D651FECAFBA009DD741 /* TestRunner.h in Headers */ = {isa = PBXBuildFile; fileRef = 519E3D571FECAFBA009DD741 /* TestRunner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D56A64B22BCEF2A00A7B01C /* IteratorIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D56A64722BCEC4F00A7B01C /* IteratorIOS.framework */; };
 		9D56A64C22BCEF2A00A7B01C /* UITestSugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D56A64922BCEE4300A7B01C /* UITestSugar.framework */; };
 		9D56A65822BCF3CD00A7B01C /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D56A65022BCF3CD00A7B01C /* Scene.swift */; };
@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		519E3D541FECAFBA009DD741 /* TestRunner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestRunner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		519E3D571FECAFBA009DD741 /* UITestSugar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITestSugar.h; sourceTree = "<group>"; };
+		519E3D571FECAFBA009DD741 /* TestRunner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRunner.h; sourceTree = "<group>"; };
 		519E3D581FECAFBA009DD741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D56A64722BCEC4F00A7B01C /* IteratorIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IteratorIOS.framework; path = Carthage/Build/iOS/IteratorIOS.framework; sourceTree = "<group>"; };
 		9D56A64922BCEE4300A7B01C /* UITestSugar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UITestSugar.framework; path = Carthage/Build/iOS/UITestSugar.framework; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				9D56A64F22BCF3CD00A7B01C /* src */,
-				519E3D561FECAFBA009DD741 /* UITestSugar */,
+				519E3D561FECAFBA009DD741 /* TestRunner */,
 				519E3D551FECAFBA009DD741 /* Products */,
 				9D56A64622BCEC4F00A7B01C /* Frameworks */,
 			);
@@ -67,13 +67,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		519E3D561FECAFBA009DD741 /* UITestSugar */ = {
+		519E3D561FECAFBA009DD741 /* TestRunner */ = {
 			isa = PBXGroup;
 			children = (
-				519E3D571FECAFBA009DD741 /* UITestSugar.h */,
+				519E3D571FECAFBA009DD741 /* TestRunner.h */,
 				519E3D581FECAFBA009DD741 /* Info.plist */,
 			);
-			path = UITestSugar;
+			path = TestRunner;
 			sourceTree = "<group>";
 		};
 		9D56A64622BCEC4F00A7B01C /* Frameworks */ = {
@@ -115,7 +115,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				519E3D651FECAFBA009DD741 /* UITestSugar.h in Headers */,
+				519E3D651FECAFBA009DD741 /* TestRunner.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +347,7 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = UITestSugar/Info.plist;
+				INFOPLIST_FILE = TestRunner/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -379,7 +379,7 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = UITestSugar/Info.plist;
+				INFOPLIST_FILE = TestRunner/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
