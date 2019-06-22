@@ -26,4 +26,3 @@ extension XCUIElementQuery {
       return QueryHelper.hittableElements(query: self)
    }
 }
-
