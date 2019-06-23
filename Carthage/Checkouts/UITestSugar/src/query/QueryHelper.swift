@@ -4,7 +4,7 @@ public class QueryHelper {
    /**
     * Returns all descendants of a query that are hittable
     * ## Example:
-    * hittableElements(query: XCUIApplication().descendants(matching: .any)).count // n
+    * hittableElements(query: app.descendants(matching: .any)).count // n
     */
    public static func hittableElements(query: XCUIElementQuery) -> [XCUIElement] {
       return (0..<query.count).indices.map { i in

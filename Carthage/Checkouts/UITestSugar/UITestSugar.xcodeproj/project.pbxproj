@@ -10,7 +10,6 @@
 		519E3D651FECAFBA009DD741 /* UITestSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 519E3D571FECAFBA009DD741 /* UITestSugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D00730622B92FE80096D893 /* Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0072FA22B92F280096D893 /* Sleep.swift */; };
 		9D00744922BA718F0096D893 /* ElementModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00744322BA718F0096D893 /* ElementModifier.swift */; };
-		9D00744B22BA718F0096D893 /* XCUIApp+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00744422BA718F0096D893 /* XCUIApp+Parser.swift */; };
 		9D00744D22BA718F0096D893 /* TabBarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00744522BA718F0096D893 /* TabBarHelper.swift */; };
 		9D00744F22BA718F0096D893 /* QueryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00744622BA718F0096D893 /* QueryHelper.swift */; };
 		F11CF28022BF5D920022C28D /* ElementParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11CF27F22BF5D920022C28D /* ElementParser.swift */; };
@@ -24,7 +23,6 @@
 		519E3D581FECAFBA009DD741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D0072FA22B92F280096D893 /* Sleep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sleep.swift; sourceTree = "<group>"; };
 		9D00744322BA718F0096D893 /* ElementModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementModifier.swift; sourceTree = "<group>"; };
-		9D00744422BA718F0096D893 /* XCUIApp+Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIApp+Parser.swift"; sourceTree = "<group>"; };
 		9D00744522BA718F0096D893 /* TabBarHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarHelper.swift; sourceTree = "<group>"; };
 		9D00744622BA718F0096D893 /* QueryHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryHelper.swift; sourceTree = "<group>"; };
 		F11CF27F22BF5D920022C28D /* ElementParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementParser.swift; sourceTree = "<group>"; };
@@ -117,19 +115,10 @@
 		9D00746322BB73C80096D893 /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				F11CF27E22BE24770022C28D /* app */,
 				9D00744122BA718F0096D893 /* element */,
 				9D00746022BB734C0096D893 /* tabbar */,
 			);
 			path = ui;
-			sourceTree = "<group>";
-		};
-		F11CF27E22BE24770022C28D /* app */ = {
-			isa = PBXGroup;
-			children = (
-				9D00744422BA718F0096D893 /* XCUIApp+Parser.swift */,
-			);
-			path = app;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,7 +214,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11CF28222BF5DFB0022C28D /* QueryParser.swift in Sources */,
-				9D00744B22BA718F0096D893 /* XCUIApp+Parser.swift in Sources */,
 				9D00744922BA718F0096D893 /* ElementModifier.swift in Sources */,
 				9D00744F22BA718F0096D893 /* QueryHelper.swift in Sources */,
 				F11CF28022BF5D920022C28D /* ElementParser.swift in Sources */,

@@ -13,9 +13,10 @@ public class ElementParser {
       return QueryParser.elements(query: query)
    }
    /**
-    *
+    * Returns all children 
     */
-   func descendants() {
-      // continue here
+   public static func descendants(element: XCUIElement, type: XCUIElement.ElementType = .any) -> [XCUIElement] {
+      let query: XCUIElementQuery = element.descendants(matching: type)
+      return QueryParser.elements(query: query)
    }
 }

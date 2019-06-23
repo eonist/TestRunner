@@ -1,9 +1,9 @@
 {
-  "commitish" : "2e35f5b4ead488a1f94bac620254d1575a7c4ac6",
+  "commitish" : "06e623f5b45a395deee85ae3e3bdf70ebc086267",
   "iOS" : [
     {
       "name" : "UITestSugar",
-      "hash" : "9a5cf3216c79152d5264ffd3693ffb3a139f58e47550b1703bd06ad46de9d06b"
+      "hash" : "e2650034d3f74df16ded5282b3886f2c3ad7976ee4b11901c847c79a9fde1420"
     }
   ]
 }
