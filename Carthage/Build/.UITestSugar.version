@@ -1,9 +1,10 @@
 {
-  "commitish" : "06e623f5b45a395deee85ae3e3bdf70ebc086267",
+  "commitish" : "fcbc19f1e93af87d4a72df725648d0df0f6ec898",
   "iOS" : [
     {
       "name" : "UITestSugar",
-      "hash" : "e2650034d3f74df16ded5282b3886f2c3ad7976ee4b11901c847c79a9fde1420"
+      "hash" : "4724caafabcede39b7b4b9ace12dd1066b959b8b2369db0c5ce30c1694e5d77c",
+      "swiftToolchainVersion" : "5.0 (swiftlang-1001.0.69.5 clang-1001.0.46.3)"
     }
   ]
 }

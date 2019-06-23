@@ -15,6 +15,7 @@
 		F11CF28022BF5D920022C28D /* ElementParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11CF27F22BF5D920022C28D /* ElementParser.swift */; };
 		F11CF28222BF5DFB0022C28D /* QueryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11CF28122BF5DFB0022C28D /* QueryParser.swift */; };
 		F11CF28422BF5EE80022C28D /* ElementAsserter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11CF28322BF5EE80022C28D /* ElementAsserter.swift */; };
+		F11CF2CB22C01EC90022C28D /* QueryAsserter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11CF2CA22C01EC90022C28D /* QueryAsserter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F11CF27F22BF5D920022C28D /* ElementParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementParser.swift; sourceTree = "<group>"; };
 		F11CF28122BF5DFB0022C28D /* QueryParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryParser.swift; sourceTree = "<group>"; };
 		F11CF28322BF5EE80022C28D /* ElementAsserter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementAsserter.swift; sourceTree = "<group>"; };
+		F11CF2CA22C01EC90022C28D /* QueryAsserter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryAsserter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			children = (
 				9D00744622BA718F0096D893 /* QueryHelper.swift */,
 				F11CF28122BF5DFB0022C28D /* QueryParser.swift */,
+				F11CF2CA22C01EC90022C28D /* QueryAsserter.swift */,
 			);
 			path = query;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				9D00744F22BA718F0096D893 /* QueryHelper.swift in Sources */,
 				F11CF28022BF5D920022C28D /* ElementParser.swift in Sources */,
 				9D00744D22BA718F0096D893 /* TabBarHelper.swift in Sources */,
+				F11CF2CB22C01EC90022C28D /* QueryAsserter.swift in Sources */,
 				F11CF28422BF5EE80022C28D /* ElementAsserter.swift in Sources */,
 				9D00730622B92FE80096D893 /* Sleep.swift in Sources */,
 			);

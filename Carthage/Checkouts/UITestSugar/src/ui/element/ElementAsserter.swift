@@ -28,11 +28,12 @@ public class ElementAsserter {
    }
    /**
     * Asserts if an element exists (with timeout)
+    * - Abstract:  This method can be used when you expect for an element to appear on the screen but needs to wait for something like an animation, or a video ad, or simply because of load time. This property was introduced in XCode 9, though we have used API similar to this to test features that involve waiting through video ads.
     * ## Examples:
     * ElementAsserter.exists(element: app.buttons[“Sign up”], timeout: 10)
     */
-   func exists(element: XCUIElement, timeout: Double) -> Bool {
-      return element.waitForExistence(timeout: timeout)
+   public static func exists(element: XCUIElement, timeout: Double) -> Bool {
+      return element.waitForExistence(timeout: timeout) // 
    }
    /**
     * Asserts if all elements in an array exists
@@ -46,5 +47,18 @@ public class ElementAsserter {
     */
    public static func hasText(element: XCUIElement, text: String) -> Bool {
       return element.staticTexts[text].exists
+   }
+}
+extension ElementAsserter {
+   /**
+    * - Abstract: Search down a scroll view until it finds a certain element
+    */
+   public static func swipeDownUntilFound(app: XCUIApplication, id: String, type: XCUIElement.ElementType, timeOut: Double = 10) {
+      var exists: Bool = false
+      repeat {
+         let element: XCUIElement = app.descendants(matching: type).element(matching: type, identifier: id).firstMatch
+         exists = ElementAsserter.exists(element: element, timeout: timeOut)
+         if exists { app.swipeDown() } // no need to swipedown if found
+      } while !exists
    }
 }

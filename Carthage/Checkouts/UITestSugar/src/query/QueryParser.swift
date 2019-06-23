@@ -5,11 +5,12 @@ public class QueryParser {
    /**
     * Returns first element by identifier
     * ## Examples:
-    * element(query: app.descendants(matching: .any), identifier:"Featured Playlists-View all")
+    * firstElement(query: app.descendants(matching: .any), identifier:"Featured Playlists-View all")
     * - Fixme: ⚠️️ use lazy map combined with first?
+    * - Parameter type: .other (UIView), .cell (UICollectionViewCell or UITableViewCell), .button (UIButton)
     */
-   public static func element(query: XCUIElementQuery, identifier: String) -> XCUIElement? {
-      let elements: [XCUIElement] = QueryParser.elements(query: query)
+   public static func firstElement(query: XCUIElementQuery, identifier: String, type: XCUIElement.ElementType = .any) -> XCUIElement? {
+      let elements: [XCUIElement] = QueryParser.elements(query: query, type: type)
       return elements.first { $0.identifier == identifier }
    }
    /**
@@ -19,7 +20,7 @@ public class QueryParser {
     */
    public static func elements(query: XCUIElementQuery, type: XCUIElement.ElementType = .any) -> [XCUIElement] {
       return (0..<query.count).indices.map { i in
-         query.children(matching: type).element(boundBy: i)
+         query.children(matching: type).element(boundBy: i)// bound by is a way to access element by index
       }
    }
    /**
@@ -33,10 +34,10 @@ public class QueryParser {
    }
    /**
     * ## Example:
-    * let firstElement = app.filterElements(query: app.children, containing: "Sugar", "500 g").first?.element
+    * let firstElement = app.filterElements(query: app.children, labels: ["Sugar", "500 g"]).first?.element
     * firstElement.tap()
     */
-   public static func firstElement(query: XCUIElementQuery, containing labels: String...) -> XCUIElement? {
+   public static func firstElement(query: XCUIElementQuery, labels: [String] ) -> XCUIElement? {
       return labels.map { label in
          query.containing(NSPredicate(format: "label CONTAINS %@", label))
       }.compactMap { $0 }.first?.element
