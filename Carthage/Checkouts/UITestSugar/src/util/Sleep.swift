@@ -1,6 +1,6 @@
 import Foundation
 /**
- * Supports fractional time
+ * Supports fractional timeb(normal sleep only supports integer)
  * ## Examples:
  * sleep(sec: 2.2) // sleeps for 2.2 seconds
  */

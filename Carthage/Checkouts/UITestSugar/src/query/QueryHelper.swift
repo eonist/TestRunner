@@ -2,7 +2,7 @@ import XCTest
 
 public class QueryHelper {
    /**
-    * ⚠️️ beta ⚠️️
+    * Returns all descendants of a query that are hittable
     * ## Example:
     * hittableElements(query: XCUIApplication().descendants(matching: .any)).count // n
     */
@@ -18,7 +18,7 @@ public class QueryHelper {
  */
 extension XCUIElementQuery {
    /**
-    * ⚠️️ beta ⚠️️
+    * Returns all descendants of a query that are hittable
     * ## Examples:
     * XCUIApplication().descendants(matching: .any).hittableElements.count // n
     */

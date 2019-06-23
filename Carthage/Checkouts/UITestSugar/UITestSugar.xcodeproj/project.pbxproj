@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		519E3D651FECAFBA009DD741 /* UITestSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 519E3D571FECAFBA009DD741 /* UITestSugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D00730622B92FE80096D893 /* Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0072FA22B92F280096D893 /* Sleep.swift */; };
-		9D00744722BA718F0096D893 /* XCUIElement+Scroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00744222BA718F0096D893 /* XCUIElement+Scroll.swift */; };
-		9D00744922BA718F0096D893 /* XCUIElement+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00744322BA718F0096D893 /* XCUIElement+Text.swift */; };
-		9D00744B22BA718F0096D893 /* XCUIElement+Filtering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00744422BA718F0096D893 /* XCUIElement+Filtering.swift */; };
+		9D00744922BA718F0096D893 /* ElementModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00744322BA718F0096D893 /* ElementModifier.swift */; };
+		9D00744B22BA718F0096D893 /* XCUIApp+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00744422BA718F0096D893 /* XCUIApp+Parser.swift */; };
 		9D00744D22BA718F0096D893 /* TabBarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00744522BA718F0096D893 /* TabBarHelper.swift */; };
 		9D00744F22BA718F0096D893 /* QueryHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D00744622BA718F0096D893 /* QueryHelper.swift */; };
+		F11CF28022BF5D920022C28D /* ElementParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11CF27F22BF5D920022C28D /* ElementParser.swift */; };
+		F11CF28222BF5DFB0022C28D /* QueryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11CF28122BF5DFB0022C28D /* QueryParser.swift */; };
+		F11CF28422BF5EE80022C28D /* ElementAsserter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11CF28322BF5EE80022C28D /* ElementAsserter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +23,13 @@
 		519E3D571FECAFBA009DD741 /* UITestSugar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITestSugar.h; sourceTree = "<group>"; };
 		519E3D581FECAFBA009DD741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D0072FA22B92F280096D893 /* Sleep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sleep.swift; sourceTree = "<group>"; };
-		9D00744222BA718F0096D893 /* XCUIElement+Scroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Scroll.swift"; sourceTree = "<group>"; };
-		9D00744322BA718F0096D893 /* XCUIElement+Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Text.swift"; sourceTree = "<group>"; };
-		9D00744422BA718F0096D893 /* XCUIElement+Filtering.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Filtering.swift"; sourceTree = "<group>"; };
+		9D00744322BA718F0096D893 /* ElementModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementModifier.swift; sourceTree = "<group>"; };
+		9D00744422BA718F0096D893 /* XCUIApp+Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIApp+Parser.swift"; sourceTree = "<group>"; };
 		9D00744522BA718F0096D893 /* TabBarHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarHelper.swift; sourceTree = "<group>"; };
 		9D00744622BA718F0096D893 /* QueryHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryHelper.swift; sourceTree = "<group>"; };
+		F11CF27F22BF5D920022C28D /* ElementParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementParser.swift; sourceTree = "<group>"; };
+		F11CF28122BF5DFB0022C28D /* QueryParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryParser.swift; sourceTree = "<group>"; };
+		F11CF28322BF5EE80022C28D /* ElementAsserter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementAsserter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +82,9 @@
 		9D00744122BA718F0096D893 /* element */ = {
 			isa = PBXGroup;
 			children = (
-				9D00744222BA718F0096D893 /* XCUIElement+Scroll.swift */,
-				9D00744322BA718F0096D893 /* XCUIElement+Text.swift */,
-				9D00744422BA718F0096D893 /* XCUIElement+Filtering.swift */,
+				F11CF27F22BF5D920022C28D /* ElementParser.swift */,
+				9D00744322BA718F0096D893 /* ElementModifier.swift */,
+				F11CF28322BF5EE80022C28D /* ElementAsserter.swift */,
 			);
 			path = element;
 			sourceTree = "<group>";
@@ -105,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				9D00744622BA718F0096D893 /* QueryHelper.swift */,
+				F11CF28122BF5DFB0022C28D /* QueryParser.swift */,
 			);
 			path = query;
 			sourceTree = "<group>";
@@ -112,10 +117,19 @@
 		9D00746322BB73C80096D893 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				F11CF27E22BE24770022C28D /* app */,
 				9D00744122BA718F0096D893 /* element */,
 				9D00746022BB734C0096D893 /* tabbar */,
 			);
 			path = ui;
+			sourceTree = "<group>";
+		};
+		F11CF27E22BE24770022C28D /* app */ = {
+			isa = PBXGroup;
+			children = (
+				9D00744422BA718F0096D893 /* XCUIApp+Parser.swift */,
+			);
+			path = app;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +153,7 @@
 				519E3D4F1FECAFBA009DD741 /* Sources */,
 				519E3D501FECAFBA009DD741 /* Frameworks */,
 				519E3D511FECAFBA009DD741 /* Headers */,
+				F128064E22BE0A5800E7BC7A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -184,16 +199,38 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F128064E22BE0A5800E7BC7A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		519E3D4F1FECAFBA009DD741 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D00744B22BA718F0096D893 /* XCUIElement+Filtering.swift in Sources */,
-				9D00744922BA718F0096D893 /* XCUIElement+Text.swift in Sources */,
-				9D00744722BA718F0096D893 /* XCUIElement+Scroll.swift in Sources */,
+				F11CF28222BF5DFB0022C28D /* QueryParser.swift in Sources */,
+				9D00744B22BA718F0096D893 /* XCUIApp+Parser.swift in Sources */,
+				9D00744922BA718F0096D893 /* ElementModifier.swift in Sources */,
 				9D00744F22BA718F0096D893 /* QueryHelper.swift in Sources */,
+				F11CF28022BF5D920022C28D /* ElementParser.swift in Sources */,
 				9D00744D22BA718F0096D893 /* TabBarHelper.swift in Sources */,
+				F11CF28422BF5EE80022C28D /* ElementAsserter.swift in Sources */,
 				9D00730622B92FE80096D893 /* Sleep.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

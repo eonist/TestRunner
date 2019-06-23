@@ -11,7 +11,7 @@ public class TabBarHelper {
       return XCUIApplication().descendants(matching: .any).matching(identifier: tabButtonName).element
    }
    ///
-   /// Returns tabbar buttons based on index
+   /// Returns tabbar buttons based on index of the tabbar.item
    /// ## Examples:
    /// TabBarHelper.tabButton(tabButtonName: 0).tap()
    ///

@@ -1,6 +1,6 @@
 # TestRunner 🏃
 
-Simplifies running UI-tests 
+Simplifies running UI-tests
 
 ### How does it work
 - Make scenes you can play and get notified on their completion (async)
@@ -32,6 +32,6 @@ runner.iterate() // 🏃
 
 ### Todo:
 - Setup repo ✅
-- Add example project 👈
 - Add carthage support ✅
 - Add AsyncIterator as external dep ✅
+- Add example project 👈
