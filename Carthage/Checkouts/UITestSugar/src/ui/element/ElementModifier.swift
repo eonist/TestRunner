@@ -26,11 +26,12 @@ public class ElementModifier {
    /**
     * Scrolling
     * Fixme: ⚠️️ write doc
-    * - NOte try to set cells: cell.accessibilityIdentifer = "cell \(indexPath.row)"
+    * - Note try to set cells: cell.accessibilityIdentifer = "cell \(indexPath.row)"
+    * - Note: there is also Native: firstScrollView.scrollToElement(element: seventhChild)
     */
    public static func scrollToElement(element: XCUIElement) {
       while !ElementAsserter.visible(element: element) {
-         element.swipeUp()
+         element.swipeDown()
       }
    }
 }

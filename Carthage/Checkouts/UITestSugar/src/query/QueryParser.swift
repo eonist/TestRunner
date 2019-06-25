@@ -6,17 +6,21 @@ public class QueryParser {
     * Returns first element by identifier
     * ## Examples:
     * firstElement(query: app.descendants(matching: .any), identifier:"Featured Playlists-View all")
-    * - Fixme: ⚠️️ use lazy map combined with first?
+    * firstElement(query: app.scrollViews.descendants(matching: .any), id: "leftAlignedIconButton", type: .button)
     * - Parameter type: .other (UIView), .cell (UICollectionViewCell or UITableViewCell), .button (UIButton)
     */
-   public static func firstElement(query: XCUIElementQuery, identifier: String, type: XCUIElement.ElementType = .any) -> XCUIElement? {
-      let elements: [XCUIElement] = QueryParser.elements(query: query, type: type)
-      return elements.first { $0.identifier == identifier }
+    public static func firstElement(query: XCUIElementQuery, id: String, type: XCUIElement.ElementType = .any) -> XCUIElement {
+      return query.element(matching: type, identifier: id).firstMatch
    }
+   //   public static func firstElement(query: XCUIElementQuery, identifier: String, type: XCUIElement.ElementType = .any) -> XCUIElement? {
+   //      let elements: [XCUIElement] = QueryParser.elements(query: query, type: type)
+   //      return elements.first { $0.identifier == identifier }
+   //   }
    /**
     * Returns elements in query
     * - Parameter query: the search query to match parent element
     * - Fixme: ⚠️️ write example
+    * - Important: you can use the native: .allElementsBoundByIndex, there is also one for only items with accessibility
     */
    public static func elements(query: XCUIElementQuery, type: XCUIElement.ElementType = .any) -> [XCUIElement] {
       return (0..<query.count).indices.map { i in
@@ -58,7 +62,8 @@ public class QueryParser {
       // Fixme: ⚠️️ Use .map or reduce or flatmap here
       var retVal: [XCUIElement] = []
       for string in strings {
-         let elementQuery: XCUIElementQuery = query.containing(NSPredicate(format: "label CONTAINS %@", string))
+         let predicate = NSPredicate(format: "label CONTAINS %@", string)
+         let elementQuery: XCUIElementQuery = query.containing(predicate)
          let elements: [XCUIElement] = QueryParser.elements(query: elementQuery)
          retVal += elements
       }

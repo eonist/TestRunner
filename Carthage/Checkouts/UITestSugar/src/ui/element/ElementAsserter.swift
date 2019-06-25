@@ -52,6 +52,7 @@ public class ElementAsserter {
 extension ElementAsserter {
    /**
     * - Abstract: Search down a scroll view until it finds a certain element
+    * - Note: there is also Native: firstScrollView.scrollToElement(element: seventhChild)
     */
    public static func swipeDownUntilFound(app: XCUIApplication, id: String, type: XCUIElement.ElementType, timeOut: Double = 10) {
       var exists: Bool = false
