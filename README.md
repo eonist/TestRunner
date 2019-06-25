@@ -13,6 +13,11 @@ Simplifies running UI-tests
 - Manual Open `.xcodeproj`
 - CocoaPod (Coming soon)
 
+### Consept:
+- Step - (Usually an anonymous Closure with one interaction logic)
+- Scene - (a series of steps)
+- Sequence - (a series of scenes)
+
 ### Example:
 ```swift
 class SearchScene {
