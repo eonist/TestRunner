@@ -4,7 +4,7 @@ import XCTest
 /**
  * - Abstract: SceneRunner plays through scenes like a playlist
  * ## Examples:
- * SceneRunner(scenes: [LoginScene.self, LogoutScene.self],  user: (" ", " ")) {Swift.print("All scenes completed 🏁") }.iterate(callBack: { _,_  in })
+ * SceneRunner(scenes: [LoginScene.self, LogoutScene.self],  user: ("John", "abc123")) { Swift.print("All scenes completed 🏁") }.iterate(callBack: { _,_  in })
  */
 open class SceneRunner: ArrayIterator<SceneKind.Type>, SceneRunnerKind {
    public lazy var app: XCUIApplication = createXCUIApp() // Convenient accessor to the app

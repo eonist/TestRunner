@@ -42,7 +42,7 @@ public class ElementParser {
       let children = element.children(matching: type).allElementsBoundByIndex
       children.forEach {
          let indentationLevel: Int = indentaionLevel + 1
-         let identation: String = String(repeating: "-", count: indentationLevel)
+         let identation: String = .init(repeating: "-", count: indentationLevel)
          debug(element: $0, indentation: identation)
          debugHierarchy(element: $0, type: type, indentaionLevel: indentationLevel) // keep traversing down the hierarchy
       }

@@ -1,5 +1,8 @@
 import Foundation
-
+/**
+ * - Abstract: A scene is a part of a sequence. A sequence has many scenes. A scene can have many steps
+ * - Abstract: Sequence([Scene([Step(),Step(),Step()])])
+ */
 open class Scene: SceneKind {
    public let sceneRunner: SceneRunnerKind
    /**
