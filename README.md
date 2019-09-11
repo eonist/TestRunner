@@ -35,6 +35,9 @@ runner.complete { Swift.print("All scenes completed 🏁") }
 runner.iterate() // 🏃
 ```
 
+### Dependencies:
+[https://github.com/eonist/UITestSugar](https://github.com/eonist/UITestSugar) 
+
 ### Todo:
 - Setup repo ✅
 - Add carthage support ✅
