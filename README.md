@@ -15,8 +15,8 @@ Simplifies running UI-tests
 
 ### Consept:
 - Step - (Usually an anonymous Closure with one interaction logic)
-- Scene - (a series of steps)
-- Sequence - (a series of scenes)
+- Scene - (A series of steps)
+- Sequence - (A series of scenes)
 
 ### Example:
 ```swift
