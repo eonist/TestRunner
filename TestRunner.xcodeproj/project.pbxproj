@@ -24,14 +24,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9D56A65022BCF3CD00A7B01C /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
-		9D56A65222BCF3CD00A7B01C /* SceneRunnerKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneRunnerKind.swift; sourceTree = "<group>"; };
-		9D56A65322BCF3CD00A7B01C /* SceneKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneKind.swift; sourceTree = "<group>"; };
-		9D56A65422BCF3CD00A7B01C /* SceneKind+Getter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SceneKind+Getter.swift"; sourceTree = "<group>"; };
-		9D56A65522BCF3CD00A7B01C /* SceneRunner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneRunner.swift; sourceTree = "<group>"; };
-		9D56A65622BCF3CD00A7B01C /* SceneRunner+Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SceneRunner+Type.swift"; sourceTree = "<group>"; };
-		9D56A65722BCF3CD00A7B01C /* SceneRunner+Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SceneRunner+Action.swift"; sourceTree = "<group>"; };
-		9D56A67822BD2F8600A7B01C /* SceneRunner+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneRunner+Create.swift"; sourceTree = "<group>"; };
 		F167D8EA2688C5370009ACA8 /* TestRunnerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestRunnerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F167D8EC2688C5370009ACA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F167D8F52688C5430009ACA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,7 +55,6 @@
 		519E3D4A1FECAFBA009DD741 = {
 			isa = PBXGroup;
 			children = (
-				9D56A64F22BCF3CD00A7B01C /* src */,
 				F167D8EB2688C5370009ACA8 /* TestRunnerApp */,
 				F167D9062688C5CD0009ACA8 /* TestRunnerAppUITests */,
 				519E3D551FECAFBA009DD741 /* Products */,
@@ -85,29 +76,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9D56A64F22BCF3CD00A7B01C /* src */ = {
-			isa = PBXGroup;
-			children = (
-				9D56A65022BCF3CD00A7B01C /* Scene.swift */,
-				9D56A65122BCF3CD00A7B01C /* protocol */,
-				9D56A65522BCF3CD00A7B01C /* SceneRunner.swift */,
-				9D56A65622BCF3CD00A7B01C /* SceneRunner+Type.swift */,
-				9D56A65722BCF3CD00A7B01C /* SceneRunner+Action.swift */,
-				9D56A67822BD2F8600A7B01C /* SceneRunner+Create.swift */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		9D56A65122BCF3CD00A7B01C /* protocol */ = {
-			isa = PBXGroup;
-			children = (
-				9D56A65222BCF3CD00A7B01C /* SceneRunnerKind.swift */,
-				9D56A65322BCF3CD00A7B01C /* SceneKind.swift */,
-				9D56A65422BCF3CD00A7B01C /* SceneKind+Getter.swift */,
-			);
-			path = protocol;
 			sourceTree = "<group>";
 		};
 		F167D8EB2688C5370009ACA8 /* TestRunnerApp */ = {

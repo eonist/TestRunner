@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Iterator",
+        "repositoryURL": "https://github.com/eonist/Iterator.git",
+        "state": {
+          "branch": "master",
+          "revision": "e26a1101eba2f3d3f56d5986813d49f89ae753fd",
+          "version": null
+        }
+      },
+      {
+        "package": "UITestSugar",
+        "repositoryURL": "https://github.com/eonist/UITestSugar.git",
+        "state": {
+          "branch": "master",
+          "revision": "cc7230259022b9caa176c997793ebbbab6fcb88d",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
