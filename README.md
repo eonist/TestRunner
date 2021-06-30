@@ -1,3 +1,5 @@
+[![Tests](https://github.com/eonist/TestRunner/actions/workflows/Tests.yml/badge.svg)](https://github.com/eonist/TestRunner/actions/workflows/Tests.yml)
+
 # TestRunner 🏃
 
 Simplifies running UI-tests
