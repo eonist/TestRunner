@@ -3,7 +3,7 @@ import Foundation
 extension SceneRunner {
    /**
     * Call this to begin iterating
-    * - Abstract: It will keep iterating until all items has been iterated over
+    * - Description: It will keep iterating until all items has been iterated over
     */
    public func iterate() {
       if hasNext() {
@@ -12,11 +12,12 @@ extension SceneRunner {
          run(scene: scene)
          iterate()
       } else {
-         complete()
+         complete() // Call onComplete callback aka Scene done
       }
    }
    /**
     * Run a scene
+    * - Description: Begin scene
     */
    public func run(scene: SceneKind) {
       scene.run()

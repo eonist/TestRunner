@@ -3,6 +3,13 @@ import Foundation
  * Extension
  */
 extension SceneRunner {
-    public typealias User = (username: String, password: String) // Stores userName and password
-    public typealias Completed = () -> Void // A callback that notifies the user when the sequence has completed
+   /**
+    * Stores userName and password
+    * - Fixme: ⚠️️ Maybe remove user? add as abstraction somewhere else if needed etc?
+    */
+    public typealias User = (username: String, password: String)
+    /**
+     * A callback that notifies the user when the sequence has completed
+     */
+    public typealias Completed = () -> Void
 }

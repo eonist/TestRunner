@@ -2,7 +2,7 @@
 
 # TestRunner 🏃
 
-Simplifies running UI-tests
+> Simplifies running UI-tests
 
 ### How does it work
 - Make scenes you can play and get notified on their completion (async)
@@ -38,10 +38,12 @@ runner.iterate() // 🏃
 ```
 
 ### Dependencies:
-[https://github.com/eonist/UITestSugar](https://github.com/eonist/UITestSugar) 
+[https://github.com/eonist/UITestSugar](https://github.com/eonist/UITestSugar)
 
 ### Todo:
 - Setup repo ✅
 - Add carthage support ✅
 - Add AsyncIterator as external dep ✅
-- Add example project (See TabNav project) 👈
+- Add example project (See TabNav project) 👈👈👈
+- Maybe add ideas from AccessRunner project, might have advanced ways of doing things etc 👈
+- Maybe use semaphore to make async -> sync ? 👈
