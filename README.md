@@ -40,10 +40,13 @@ runner.iterate() // 🏃
 ### Dependencies:
 [https://github.com/eonist/UITestSugar](https://github.com/eonist/UITestSugar)
 
+### Gotchas:
+- Remember to add XCTest.framework to frameworks in the project your testing. Or else you get lots of errors etc.
+
 ### Todo:
 - Setup repo ✅
 - Add carthage support ✅
 - Add AsyncIterator as external dep ✅
-- Add example project (See TabNav project) 👈👈👈
+- Add example project (See TabNav-project, playlist-project, UITesting-project) 👈👈👈
 - Maybe add ideas from AccessRunner project, might have advanced ways of doing things etc 👈
 - Maybe use semaphore to make async -> sync ? 👈

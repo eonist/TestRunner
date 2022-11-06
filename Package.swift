@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.6
 import PackageDescription
 
 let package = Package(
@@ -10,8 +10,8 @@ let package = Package(
             targets: ["TestRunner"]),
     ],
     dependencies: [
-      .package(url: "https://github.com/eonist/Iterator.git", .branch("master")),
-      .package(url: "https://github.com/eonist/UITestSugar.git", .branch("master"))
+      .package(url: "https://github.com/eonist/Iterator.git", branch: "master"),
+      .package(url: "https://github.com/eonist/UITestSugar.git", branch: "master")
    ],
     targets: [
         .target(
