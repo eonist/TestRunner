@@ -11,15 +11,7 @@
 		F167D8F62688C5430009ACA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F167D8F52688C5430009ACA8 /* Assets.xcassets */; };
 		F167D8F92688C5430009ACA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F167D8F72688C5430009ACA8 /* LaunchScreen.storyboard */; };
 		F167D9082688C5CD0009ACA8 /* TestRunnerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167D9072688C5CD0009ACA8 /* TestRunnerAppUITests.swift */; };
-		F1F52CEF2917E92000D62EBC /* XCTest.framework in Sources */ = {isa = PBXBuildFile; fileRef = F1F52CEA2917E86900D62EBC /* XCTest.framework */; };
-		F1F52CF32917EABD00D62EBC /* UITestSugar in Frameworks */ = {isa = PBXBuildFile; productRef = F1F52CF22917EABD00D62EBC /* UITestSugar */; };
-		F1F52CF42917EAC700D62EBC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F52CEA2917E86900D62EBC /* XCTest.framework */; };
-		F1F52CF52917EAC700D62EBC /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1F52CEA2917E86900D62EBC /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F1F52CF72917EADE00D62EBC /* XCTest.framework in Resources */ = {isa = PBXBuildFile; fileRef = F1F52CEA2917E86900D62EBC /* XCTest.framework */; };
-		F1F52CF92917EAEC00D62EBC /* UITestSugar in Frameworks */ = {isa = PBXBuildFile; productRef = F1F52CF82917EAEC00D62EBC /* UITestSugar */; };
-		F1F52CFA2917EAF000D62EBC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F52CEA2917E86900D62EBC /* XCTest.framework */; };
-		F1F52CFB2917EB2200D62EBC /* XCTest.framework in Resources */ = {isa = PBXBuildFile; fileRef = F1F52CEA2917E86900D62EBC /* XCTest.framework */; };
-		F1F52D002917EB6700D62EBC /* XCTest.framework in Sources */ = {isa = PBXBuildFile; fileRef = F1F52CEA2917E86900D62EBC /* XCTest.framework */; };
+		F1F52D4D2917F5CD00D62EBC /* UITestSugar in Frameworks */ = {isa = PBXBuildFile; productRef = F1F52D4C2917F5CD00D62EBC /* UITestSugar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,20 +23,6 @@
 			remoteInfo = TestRunnerApp;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		F1F52CF62917EAC700D62EBC /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				F1F52CF52917EAC700D62EBC /* XCTest.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F167D8EA2688C5370009ACA8 /* TestRunnerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestRunnerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,8 +41,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1F52CF32917EABD00D62EBC /* UITestSugar in Frameworks */,
-				F1F52CF42917EAC700D62EBC /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,8 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1F52CFA2917EAF000D62EBC /* XCTest.framework in Frameworks */,
-				F1F52CF92917EAEC00D62EBC /* UITestSugar in Frameworks */,
+				F1F52D4D2917F5CD00D62EBC /* UITestSugar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,16 +112,13 @@
 				F167D8E62688C5370009ACA8 /* Sources */,
 				F167D8E72688C5370009ACA8 /* Frameworks */,
 				F167D8E82688C5370009ACA8 /* Resources */,
-				F1F52CF62917EAC700D62EBC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F1F52CFD2917EB4B00D62EBC /* PBXTargetDependency */,
 			);
 			name = TestRunnerApp;
 			packageProductDependencies = (
-				F1F52CF22917EABD00D62EBC /* UITestSugar */,
 			);
 			productName = TestRunnerApp;
 			productReference = F167D8EA2688C5370009ACA8 /* TestRunnerApp.app */;
@@ -163,12 +135,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				F1F52CFF2917EB5F00D62EBC /* PBXTargetDependency */,
 				F167D90B2688C5CD0009ACA8 /* PBXTargetDependency */,
 			);
 			name = TestRunnerAppUITests;
 			packageProductDependencies = (
-				F1F52CF82917EAEC00D62EBC /* UITestSugar */,
+				F1F52D4C2917F5CD00D62EBC /* UITestSugar */,
 			);
 			productName = TestRunnerAppUITests;
 			productReference = F167D9052688C5CC0009ACA8 /* TestRunnerAppUITests.xctest */;
@@ -203,7 +174,7 @@
 			);
 			mainGroup = 519E3D4A1FECAFBA009DD741;
 			packageReferences = (
-				F167D8C12688C3A20009ACA8 /* XCRemoteSwiftPackageReference "UITestSugar" */,
+				F1F52D4B2917F5CD00D62EBC /* XCRemoteSwiftPackageReference "UITestSugar" */,
 			);
 			productRefGroup = 519E3D551FECAFBA009DD741 /* Products */;
 			projectDirPath = "";
@@ -220,7 +191,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1F52CFB2917EB2200D62EBC /* XCTest.framework in Resources */,
 				F167D8F92688C5430009ACA8 /* LaunchScreen.storyboard in Resources */,
 				F167D8F62688C5430009ACA8 /* Assets.xcassets in Resources */,
 			);
@@ -230,7 +200,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1F52CF72917EADE00D62EBC /* XCTest.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +210,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1F52CEF2917E92000D62EBC /* XCTest.framework in Sources */,
 				F167D8ED2688C5370009ACA8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,7 +218,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1F52D002917EB6700D62EBC /* XCTest.framework in Sources */,
 				F167D9082688C5CD0009ACA8 /* TestRunnerAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,14 +229,6 @@
 			isa = PBXTargetDependency;
 			target = F167D8E92688C5370009ACA8 /* TestRunnerApp */;
 			targetProxy = F167D90A2688C5CD0009ACA8 /* PBXContainerItemProxy */;
-		};
-		F1F52CFD2917EB4B00D62EBC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = F1F52CFC2917EB4B00D62EBC /* UITestSugar */;
-		};
-		F1F52CFF2917EB5F00D62EBC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = F1F52CFE2917EB5F00D62EBC /* UITestSugar */;
 		};
 /* End PBXTargetDependency section */
 
@@ -540,7 +499,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F167D8C12688C3A20009ACA8 /* XCRemoteSwiftPackageReference "UITestSugar" */ = {
+		F1F52D4B2917F5CD00D62EBC /* XCRemoteSwiftPackageReference "UITestSugar" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/eonist/UITestSugar";
 			requirement = {
@@ -551,24 +510,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F1F52CF22917EABD00D62EBC /* UITestSugar */ = {
+		F1F52D4C2917F5CD00D62EBC /* UITestSugar */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F167D8C12688C3A20009ACA8 /* XCRemoteSwiftPackageReference "UITestSugar" */;
-			productName = UITestSugar;
-		};
-		F1F52CF82917EAEC00D62EBC /* UITestSugar */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F167D8C12688C3A20009ACA8 /* XCRemoteSwiftPackageReference "UITestSugar" */;
-			productName = UITestSugar;
-		};
-		F1F52CFC2917EB4B00D62EBC /* UITestSugar */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F167D8C12688C3A20009ACA8 /* XCRemoteSwiftPackageReference "UITestSugar" */;
-			productName = UITestSugar;
-		};
-		F1F52CFE2917EB5F00D62EBC /* UITestSugar */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F167D8C12688C3A20009ACA8 /* XCRemoteSwiftPackageReference "UITestSugar" */;
+			package = F1F52D4B2917F5CD00D62EBC /* XCRemoteSwiftPackageReference "UITestSugar" */;
 			productName = UITestSugar;
 		};
 /* End XCSwiftPackageProductDependency section */
