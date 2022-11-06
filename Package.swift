@@ -3,7 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "TestRunner",
-    platforms: [.iOS(.v12), .macOS(.v10_13)],
+    platforms: [.iOS(.v15), .macOS(.v10_15)],
     products: [
         .library(
             name: "TestRunner",
