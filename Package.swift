@@ -16,7 +16,9 @@ let package = Package(
     targets: [
         .target(
             name: "TestRunner",
-            dependencies: ["Iterator", "UITestSugar"]),
+            dependencies: ["Iterator", "UITestSugar"],
+            linkerSettings: [.linkedFramework("XCTest")]
+         ),
         .testTarget(
             name: "TestRunnerTests",
             dependencies: ["TestRunner"]),

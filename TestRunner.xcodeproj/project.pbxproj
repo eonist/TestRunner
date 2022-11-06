@@ -11,6 +11,15 @@
 		F167D8F62688C5430009ACA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F167D8F52688C5430009ACA8 /* Assets.xcassets */; };
 		F167D8F92688C5430009ACA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F167D8F72688C5430009ACA8 /* LaunchScreen.storyboard */; };
 		F167D9082688C5CD0009ACA8 /* TestRunnerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167D9072688C5CD0009ACA8 /* TestRunnerAppUITests.swift */; };
+		F1F52CEF2917E92000D62EBC /* XCTest.framework in Sources */ = {isa = PBXBuildFile; fileRef = F1F52CEA2917E86900D62EBC /* XCTest.framework */; };
+		F1F52CF32917EABD00D62EBC /* UITestSugar in Frameworks */ = {isa = PBXBuildFile; productRef = F1F52CF22917EABD00D62EBC /* UITestSugar */; };
+		F1F52CF42917EAC700D62EBC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F52CEA2917E86900D62EBC /* XCTest.framework */; };
+		F1F52CF52917EAC700D62EBC /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1F52CEA2917E86900D62EBC /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F1F52CF72917EADE00D62EBC /* XCTest.framework in Resources */ = {isa = PBXBuildFile; fileRef = F1F52CEA2917E86900D62EBC /* XCTest.framework */; };
+		F1F52CF92917EAEC00D62EBC /* UITestSugar in Frameworks */ = {isa = PBXBuildFile; productRef = F1F52CF82917EAEC00D62EBC /* UITestSugar */; };
+		F1F52CFA2917EAF000D62EBC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F52CEA2917E86900D62EBC /* XCTest.framework */; };
+		F1F52CFB2917EB2200D62EBC /* XCTest.framework in Resources */ = {isa = PBXBuildFile; fileRef = F1F52CEA2917E86900D62EBC /* XCTest.framework */; };
+		F1F52D002917EB6700D62EBC /* XCTest.framework in Sources */ = {isa = PBXBuildFile; fileRef = F1F52CEA2917E86900D62EBC /* XCTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +32,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F1F52CF62917EAC700D62EBC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F1F52CF52917EAC700D62EBC /* XCTest.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		F167D8EA2688C5370009ACA8 /* TestRunnerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestRunnerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F167D8EC2688C5370009ACA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +55,7 @@
 		F167D9052688C5CC0009ACA8 /* TestRunnerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestRunnerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F167D9072688C5CD0009ACA8 /* TestRunnerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRunnerAppUITests.swift; sourceTree = "<group>"; };
 		F167D9092688C5CD0009ACA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1F52CEA2917E86900D62EBC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1F52CF32917EABD00D62EBC /* UITestSugar in Frameworks */,
+				F1F52CF42917EAC700D62EBC /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1F52CFA2917EAF000D62EBC /* XCTest.framework in Frameworks */,
+				F1F52CF92917EAEC00D62EBC /* UITestSugar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +102,7 @@
 		9D56A64622BCEC4F00A7B01C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F1F52CEA2917E86900D62EBC /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -108,12 +137,17 @@
 				F167D8E62688C5370009ACA8 /* Sources */,
 				F167D8E72688C5370009ACA8 /* Frameworks */,
 				F167D8E82688C5370009ACA8 /* Resources */,
+				F1F52CF62917EAC700D62EBC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F1F52CFD2917EB4B00D62EBC /* PBXTargetDependency */,
 			);
 			name = TestRunnerApp;
+			packageProductDependencies = (
+				F1F52CF22917EABD00D62EBC /* UITestSugar */,
+			);
 			productName = TestRunnerApp;
 			productReference = F167D8EA2688C5370009ACA8 /* TestRunnerApp.app */;
 			productType = "com.apple.product-type.application";
@@ -129,9 +163,13 @@
 			buildRules = (
 			);
 			dependencies = (
+				F1F52CFF2917EB5F00D62EBC /* PBXTargetDependency */,
 				F167D90B2688C5CD0009ACA8 /* PBXTargetDependency */,
 			);
 			name = TestRunnerAppUITests;
+			packageProductDependencies = (
+				F1F52CF82917EAEC00D62EBC /* UITestSugar */,
+			);
 			productName = TestRunnerAppUITests;
 			productReference = F167D9052688C5CC0009ACA8 /* TestRunnerAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -166,7 +204,6 @@
 			mainGroup = 519E3D4A1FECAFBA009DD741;
 			packageReferences = (
 				F167D8C12688C3A20009ACA8 /* XCRemoteSwiftPackageReference "UITestSugar" */,
-				F167D8C72688C3B00009ACA8 /* XCRemoteSwiftPackageReference "iterator" */,
 			);
 			productRefGroup = 519E3D551FECAFBA009DD741 /* Products */;
 			projectDirPath = "";
@@ -183,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1F52CFB2917EB2200D62EBC /* XCTest.framework in Resources */,
 				F167D8F92688C5430009ACA8 /* LaunchScreen.storyboard in Resources */,
 				F167D8F62688C5430009ACA8 /* Assets.xcassets in Resources */,
 			);
@@ -192,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1F52CF72917EADE00D62EBC /* XCTest.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1F52CEF2917E92000D62EBC /* XCTest.framework in Sources */,
 				F167D8ED2688C5370009ACA8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1F52D002917EB6700D62EBC /* XCTest.framework in Sources */,
 				F167D9082688C5CD0009ACA8 /* TestRunnerAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +262,14 @@
 			isa = PBXTargetDependency;
 			target = F167D8E92688C5370009ACA8 /* TestRunnerApp */;
 			targetProxy = F167D90A2688C5CD0009ACA8 /* PBXContainerItemProxy */;
+		};
+		F1F52CFD2917EB4B00D62EBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = F1F52CFC2917EB4B00D62EBC /* UITestSugar */;
+		};
+		F1F52CFF2917EB5F00D62EBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = F1F52CFE2917EB5F00D62EBC /* UITestSugar */;
 		};
 /* End PBXTargetDependency section */
 
@@ -359,53 +408,65 @@
 		F167D8FC2688C5440009ACA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				INFOPLIST_FILE = TestRunnerApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = co.sentry.TestRunnerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F167D8FD2688C5440009ACA8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				INFOPLIST_FILE = TestRunnerApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = co.sentry.TestRunnerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		F167D90D2688C5CD0009ACA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				INFOPLIST_FILE = TestRunnerAppUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -416,6 +477,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.sentry.TestRunnerAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TestRunnerApp;
 			};
@@ -424,10 +486,12 @@
 		F167D90E2688C5CD0009ACA8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				INFOPLIST_FILE = TestRunnerAppUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,6 +501,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.sentry.TestRunnerAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TestRunnerApp;
 			};
@@ -483,15 +548,30 @@
 				kind = branch;
 			};
 		};
-		F167D8C72688C3B00009ACA8 /* XCRemoteSwiftPackageReference "iterator" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/eonist/iterator";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F1F52CF22917EABD00D62EBC /* UITestSugar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F167D8C12688C3A20009ACA8 /* XCRemoteSwiftPackageReference "UITestSugar" */;
+			productName = UITestSugar;
+		};
+		F1F52CF82917EAEC00D62EBC /* UITestSugar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F167D8C12688C3A20009ACA8 /* XCRemoteSwiftPackageReference "UITestSugar" */;
+			productName = UITestSugar;
+		};
+		F1F52CFC2917EB4B00D62EBC /* UITestSugar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F167D8C12688C3A20009ACA8 /* XCRemoteSwiftPackageReference "UITestSugar" */;
+			productName = UITestSugar;
+		};
+		F1F52CFE2917EB5F00D62EBC /* UITestSugar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F167D8C12688C3A20009ACA8 /* XCRemoteSwiftPackageReference "UITestSugar" */;
+			productName = UITestSugar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 519E3D4B1FECAFBA009DD741 /* Project object */;
 }
