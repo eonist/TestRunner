@@ -6,5 +6,5 @@ extension SceneKind {
    /**
     * - Fixme: ⚠️️ Deperecate this?
     */
-   public var user: SceneRunner.User { sceneRunner.user }
+//   public var user: SceneRunner.User { sceneRunner.user }
 }

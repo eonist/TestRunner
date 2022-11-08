@@ -10,11 +10,6 @@
 - Reuse common scenes like login and logout
 - Works asynchronously
 
-### How do I get it
-- Carthage `github "eonist/TestRunner"`
-- Manual Open `.xcodeproj`
-- CocoaPod (Coming soon)
-
 ### Consept:
 - Step - (Usually an anonymous Closure with one interaction logic)
 - Scene - (A series of steps)
@@ -32,7 +27,7 @@ class SearchScene {
   }
 }
 let sequence: [SceneKind.Type] = [LoginScene.self, SearchScene.self, LogoutScene.self]
-let runner: SceneRunner = .init(sequence: sequence, user: (username:"John", password:"Little") , onComplete: {})
+let runner: SceneRunner = .init(sequence: sequence, onComplete: {})
 runner.complete { Swift.print("All scenes completed 🏁") }
 runner.iterate() // 🏃
 ```
@@ -41,10 +36,12 @@ runner.iterate() // 🏃
 - [https://github.com/eonist/UITestSugar](https://github.com/eonist/UITestSugar)
 
 ### Gotchas:
-- Remember to add XCTest.framework to frameworks in the project your testing. Or else you get lots of errors etc.
+- Add this framework via XCode SPM-package-manager to the `UITesting-target` in xcode, not main target
 
 ### Resources:
 - https://medium.com/tauk-blog/using-xctest-and-xctestcase-for-ios-tests-28828c829b3
+- https://dr-rost.medium.com/using-xctest-extension-in-a-swift-package-c954b8ed4d62
+- https://www.hackingwithswift.com/articles/148/xcode-ui-testing-cheat-sheet
 
 ### Todo:
 - Setup repo ✅
@@ -53,4 +50,4 @@ runner.iterate() // 🏃
 - Add example project (See TabNav-project, playlist-project, UITesting-project) 👈👈👈
 - Maybe add ideas from AccessRunner project, might have advanced ways of doing things etc 👈
 - Maybe use semaphore to make async -> sync ? 👈
-- Remove carthage support
+- Remove carthage support ✅ 
