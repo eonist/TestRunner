@@ -1,4 +1,5 @@
 import Foundation
+#if canImport(XCTest)
 import XCTest
 
 extension SceneKind {
@@ -8,3 +9,4 @@ extension SceneKind {
     */
 //   public var user: SceneRunner.User { sceneRunner.user }
 }
+#endif

@@ -1,4 +1,5 @@
 import Foundation
+#if canImport(XCTest)
 import XCTest
 
 extension SceneRunner {
@@ -12,3 +13,4 @@ extension SceneRunner {
       return app
    }
 }
+#endif

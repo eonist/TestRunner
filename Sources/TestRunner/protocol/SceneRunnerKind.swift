@@ -1,4 +1,5 @@
 import Foundation
+#if canImport(XCTest)
 import XCTest
 
 public protocol SceneRunnerKind {
@@ -8,3 +9,4 @@ public protocol SceneRunnerKind {
     var scenes: [SceneKind.Type] { get }
     var complete: SceneRunner.Completed { get }
 }
+#endif

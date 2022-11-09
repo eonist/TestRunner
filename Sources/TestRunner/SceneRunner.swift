@@ -1,5 +1,6 @@
 import Foundation
 import Iterator
+#if canImport(XCTest)
 import XCTest
 /**
  * - Description: SceneRunner plays through scenes like a playlist
@@ -25,3 +26,4 @@ open class SceneRunner: ArrayIterator<SceneKind.Type>, SceneRunnerKind {
       super.init(array: sequence)
    }
 }
+#endif
