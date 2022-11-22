@@ -14,6 +14,7 @@ open class Scene: SceneKind {
    }
    /**
     * Run the scene
+    * - Fixme: ⚠️️ maybe add throws? so we can log errors etc?
     */
    open func run() {
       fatalError("Must be implemented by super-type")
