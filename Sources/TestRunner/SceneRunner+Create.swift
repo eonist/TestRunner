@@ -14,4 +14,7 @@ extension SceneRunner {
       return app
    }
 }
+// - Fixme: ⚠️️ we could launch the app with bundleID etc
+//app = XCUIApplication(bundleIdentifier: "com.apple.mobilesafari")
+//app.launch()
 #endif
