@@ -11,9 +11,9 @@
 - Works asynchronously
 
 ### Consept:
-- Step - (Usually an anonymous Closure with one interaction logic)
-- Scene - (A series of steps)
-- Sequence - (A series of scenes)
+- Step - Usually an anonymous closure with one interaction logic
+- Scene - A series of steps
+- Sequence - A series of scenes
 
 ### Example:
 ```swift
@@ -44,10 +44,6 @@ runner.iterate() // 🏃
 - https://www.hackingwithswift.com/articles/148/xcode-ui-testing-cheat-sheet
 
 ### Todo:
-- Setup repo ✅
-- Add carthage support ✅
-- Add AsyncIterator as external dep ✅
 - Add example project (See TabNav-project, playlist-project, UITesting-project) 👈👈👈
 - Maybe add ideas from AccessRunner project, might have advanced ways of doing things etc 👈
 - Maybe use semaphore to make async -> sync ? 👈
-- Remove carthage support ✅ 
