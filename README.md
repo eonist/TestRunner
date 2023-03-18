@@ -1,3 +1,7 @@
+![mit](https://img.shields.io/badge/License-MIT-brightgreen.svg)
+![platform](https://img.shields.io/badge/Platform-iOS/macOS-blue.svg)
+![Lang](https://img.shields.io/badge/Language-Swift%205-orange.svg)
+[![SPM compatible](https://img.shields.io/badge/SPM-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift)
 [![Tests](https://github.com/eonist/TestRunner/actions/workflows/Tests.yml/badge.svg)](https://github.com/eonist/TestRunner/actions/workflows/Tests.yml)
 [![codebeat badge](https://codebeat.co/badges/5ad762ee-862a-4267-a69e-9fd8ed9ffce6)](https://codebeat.co/projects/github-com-eonist-testrunner-master)
 
