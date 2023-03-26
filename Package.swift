@@ -7,12 +7,12 @@ let package = Package(
     products: [
         .library(
             name: "TestRunner",
-            targets: ["TestRunner"]),
+            targets: ["TestRunner"])
     ],
     dependencies: [
       .package(url: "https://github.com/eonist/Iterator.git", branch: "master"),
       .package(url: "https://github.com/eonist/UITestSugar.git", branch: "master")
-   ],
+    ],
     targets: [
         .target(
             name: "TestRunner",
@@ -21,6 +21,6 @@ let package = Package(
          ),
         .testTarget(
             name: "TestRunnerTests",
-            dependencies: ["TestRunner"]),
+            dependencies: ["TestRunner"])
     ]
 )
