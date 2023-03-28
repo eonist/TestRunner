@@ -10,6 +10,7 @@ import XCTest
 open class SceneRunner: ArrayIterator<SceneKind.Type>, SceneRunnerKind {
    public lazy var app: XCUIApplication = createXCUIApp() // Convenient accessor to the app
    public var scenes: [SceneKind.Type] { collection } // Stores the scenes in the sequence
+   public var testCase: XCTestCase?
    public var complete: Completed // A callback that notifies the user when the sequence has completed
    /**
     * Initiate the scene-runner
@@ -18,7 +19,8 @@ open class SceneRunner: ArrayIterator<SceneKind.Type>, SceneRunnerKind {
     *   - onComplete: A callback that notifies the user when the sequence has completed
     */
    @discardableResult
-   public init(sequence: [SceneKind.Type], onComplete: @escaping Completed) {
+   public init(sequence: [SceneKind.Type], testCase: XCTestCase? = nil, onComplete: @escaping Completed) {
+      self.testCase = testCase
       self.complete = onComplete
       super.init(array: sequence)
    }
