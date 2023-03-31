@@ -5,12 +5,16 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-    
+
 jobs:
+  SwiftLint: ## Adds swift-linting to GH actions
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: GitHub Action for SwiftLint
+        uses: norio-nomura/action-swiftlint@3.2.1
   build:
-
     runs-on: macos-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Build
