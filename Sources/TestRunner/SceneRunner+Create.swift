@@ -10,6 +10,7 @@ extension SceneRunner {
     */
    @objc open func createXCUIApp() -> XCUIApplication {
       let app = XCUIApplication()
+      app.launchArguments = launchArgs
       app.launchEnvironment = launchEnvironment
       app.launch()
       return app
