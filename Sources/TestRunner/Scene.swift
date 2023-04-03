@@ -5,7 +5,7 @@ import Foundation
  * Sequence([Scene([Step(), Step(), Step()])])
  */
 open class Scene: SceneKind {
-   public let sceneRunner: SceneRunnerKind
+   public var sceneRunner: SceneRunnerKind
    /**
     * - Parameter scenerunner: A reference to the "sequencer" of the scenes
     */
