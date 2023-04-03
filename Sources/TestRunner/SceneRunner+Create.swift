@@ -9,9 +9,8 @@ extension SceneRunner {
     * - Remark: Anywhere in the app we can also access this and other apps by knowing their bundle id: private static `let springboardApp = XCUIApplication(bundleIdentifier: "com.apple.springboard")`
     */
    @objc open func createXCUIApp() -> XCUIApplication {
+//      Swift.print("createXCUIApp")
       let app = XCUIApplication()
-      app.launchArguments = launchArgs
-      app.launchEnvironment = launchEnvironment
       app.launch()
       return app
    }
