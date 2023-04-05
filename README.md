@@ -34,6 +34,7 @@ class SearchScene {
 let sequence: [SceneKind.Type] = [LoginScene.self, SearchScene.self, LogoutScene.self]
 let runner: SceneRunner = .init(sequence: sequence, onComplete: {})
 runner.complete { Swift.print("All scenes completed 🏁") }
+runner.app.launch()
 runner.iterate() // 🏃
 ```
 
