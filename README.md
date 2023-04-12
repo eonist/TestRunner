@@ -41,7 +41,7 @@ runner.iterate() // 🏃
 ### Dependencies:
 - [https://github.com/eonist/UITestSugar](https://github.com/eonist/UITestSugar)
 
-> *Warning:*  
+> **Warning:**  
 > Add this framework via XCode SPM-package-manager to the `UITesting-target` in xcode, not main target
 
 ### Resources:
