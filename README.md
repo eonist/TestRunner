@@ -41,8 +41,8 @@ runner.iterate() // 🏃
 ### Dependencies:
 - [https://github.com/eonist/UITestSugar](https://github.com/eonist/UITestSugar)
 
-### Gotchas:
-- Add this framework via XCode SPM-package-manager to the `UITesting-target` in xcode, not main target
+> *Warning:*  
+> Add this framework via XCode SPM-package-manager to the `UITesting-target` in xcode, not main target
 
 ### Resources:
 - https://medium.com/tauk-blog/using-xctest-and-xctestcase-for-ios-tests-28828c829b3
