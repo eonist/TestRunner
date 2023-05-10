@@ -15,7 +15,7 @@
 - Reuse common scenes like login and logout
 - Works asynchronously
 
-### Consept:
+### Concept:
 - Step - Usually an anonymous closure with one interaction logic
 - Scene - A series of steps
 - Sequence - A series of scenes
