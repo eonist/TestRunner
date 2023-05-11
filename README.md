@@ -10,15 +10,15 @@
 > Simplifies running UI-tests
 
 ### How does it work
-- Make scenes you can play and get notified on their completion (async)
+- Makes scenes you can play and get notified on their completion (async)
 - Iterate through scenes in sequences
-- Reuse common scenes like login and logout
+- Reuse common scenes like `LoginScene` and `LogoutScene`
 - Works asynchronously
 
 ### Concept:
-- Step - Usually an anonymous closure with one interaction logic
-- Scene - A series of steps
-- Sequence - A series of scenes
+- Step - `Usually an anonymous closure with one interaction logic`
+- Scene - `A series of steps`
+- Sequence - `A series of scenes`
 
 ### Example:
 ```swift
