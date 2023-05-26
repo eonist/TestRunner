@@ -1,6 +1,8 @@
 import Foundation
 /**
- * - Description: A scene is a part of a sequence. A sequence has many scenes. A scene can have many steps
+ * - Remark: A scene is a part of a sequence
+ * - Remark: A sequence has many scenes
+ * - Remark: A scene can have many steps
  * ## Examples:
  * Sequence([Scene([Step(), Step(), Step()])])
  */
