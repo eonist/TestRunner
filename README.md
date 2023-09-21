@@ -10,15 +10,17 @@
 > Simplifies running UI-tests
 
 ### How does it work
-- Makes scenes you can play and get notified on their completion (async)
-- Iterate through scenes in sequences
-- Reuse common scenes like `LoginScene` and `LogoutScene`
-- Works asynchronously
+TestRunner allows you to:
+- Create scenes that you can play and receive notifications upon their completion (asynchronously).
+- Iterate through scenes in sequences.
+- Reuse common scenes such as `LoginScene` and `LogoutScene`.
+- Operate asynchronously.
 
-### Concept:
-- Step - `Usually an anonymous closure with one interaction logic`
-- Scene - `A series of steps`
-- Sequence - `A series of scenes`
+
+## Key Concepts:
+- Step: A single interaction logic, usually encapsulated in an anonymous closure.
+- Scene: A series of steps.
+- Sequence: A series of scenes.
 
 ### Example:
 ```swift
@@ -44,10 +46,13 @@ runner.iterate() // 🏃
 > **Warning**  
 > Add this framework via XCode SPM-package-manager to the `UITesting-target` in xcode, not main target
 
-### Resources:
-- https://medium.com/tauk-blog/using-xctest-and-xctestcase-for-ios-tests-28828c829b3
-- https://dr-rost.medium.com/using-xctest-extension-in-a-swift-package-c954b8ed4d62
-- https://www.hackingwithswift.com/articles/148/xcode-ui-testing-cheat-sheet
+## Resources:
+-[Using XCTest and XCTestCase for iOS Tests](https://medium.com/tauk-blog/using-xctest-and-xctestcase-for-ios-tests-28828c829b3): A comprehensive guide on utilizing XCTest and XCTestCase for iOS testing.
+
+- [Using XCTest Extension in a Swift Package](https://dr-rost.medium.com/using-xctest-extension-in-a-swift-package-c954b8ed4d62): An informative post detailing the integration of XCTest extension within a Swift package.
+
+- [Xcode UI Testing Cheat Sheet](https://www.hackingwithswift.com/articles/148/xcode-ui-testing-cheat-sheet): A handy cheat sheet offering quick reference for Xcode UI testing.
+
 
 ### Todo:
 - Add example project (See TabNav-project, playlist-project, UITesting-project) 👈👈👈
