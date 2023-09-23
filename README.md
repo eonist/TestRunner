@@ -9,6 +9,22 @@
 
 > Simplifies running UI-tests
 
+### Description:
+- TestRunner is a Swift package that simplifies running UI tests. 
+- It allows you to create scenes that can be played and receive notifications upon their completion.
+- You can iterate through scenes in sequences, reuse common scenes such as `LoginScene` and `LogoutScene`, and operate asynchronously.
+
+### Table of Contents
+- [Overview](#overview)
+- [How does it work](#how-does-it-work)
+- [Key Concepts](#key-concepts)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Dependencies](#dependencies)
+- [Resources](#resources)
+- [Contributing](#contributing)
+- [License](#license)
+
 ### How does it work
 TestRunner allows you to:
 - Create scenes that you can play and receive notifications upon their completion (asynchronously).
@@ -16,11 +32,32 @@ TestRunner allows you to:
 - Reuse common scenes such as `LoginScene` and `LogoutScene`.
 - Operate asynchronously.
 
-
 ## Key Concepts:
 - Step: A single interaction logic, usually encapsulated in an anonymous closure.
 - Scene: A series of steps.
 - Sequence: A series of scenes.
+ 
+## Installation
+
+You can install TestRunner using Swift Package Manager. Simply add the following line to your `Package.swift` file:
+
+```swift
+.package(url: "https://github.com/eonist/TestRunner.git", from: "1.0.0")
+```
+
+Then add `TestRunner` as a dependency for your target:
+
+```swift
+.target(
+    name: "MyTarget",
+    dependencies: [
+        "TestRunner",
+    ]
+),
+```
+
+Alternatively, you can add TestRunner to your project using Xcode. Simply go to `File > Swift Packages > Add Package Dependency` and enter the URL of this repository.
+
 
 ### Example:
 ```swift

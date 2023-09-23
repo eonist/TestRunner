@@ -1,8 +1,8 @@
 import Foundation
-
-// Extending the SceneRunner class
+/**
+ * Extending the SceneRunner class to add actions
+ */
 extension SceneRunner {
-
    /**
     * Call this to begin iterating over the scenes.
     * - Description: This function will keep iterating until all scenes have been iterated over.
@@ -25,14 +25,12 @@ extension SceneRunner {
          complete() // Call onComplete callback aka Scene done
       }
    }
-   
    /**
     * Run a scene
     * - Description: This function takes a scene of type SceneKind and calls its run function.
     * It is used in the iterate function to run each scene.
     */
    public func run(scene: SceneKind) {
-      // Call the run function of the scene
-      scene.run()
+      scene.run() // Call the run function of the scene
    }
 }

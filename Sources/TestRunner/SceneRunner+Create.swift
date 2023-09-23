@@ -1,8 +1,9 @@
 import Foundation
 #if canImport(XCTest)
 import XCTest
-
-// Extending SceneRunner to include testing functionalities
+/**
+ * Extending SceneRunner to include testing functionalities
+ */
 extension SceneRunner {
    /**
     * This function is very convenient when testing scenes. It creates only one reference to the app, 
