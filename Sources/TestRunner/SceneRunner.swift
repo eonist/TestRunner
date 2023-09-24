@@ -14,13 +14,13 @@ import XCTest
  */
 open class SceneRunner: ArrayIterator<SceneKind.Type>, SceneRunnerKind {
     // Convenient accessor to the app
-    public lazy var app: XCUIApplication = createXCUIApp() 
+    public lazy var app: XCUIApplication = createXCUIApp()
     // Stores the scenes in the sequence
-    public var scenes: [SceneKind.Type] { collection } 
+    public var scenes: [SceneKind.Type] { collection }
     // Optional XCTestCase instance
     public var testCase: XCTestCase?
     // A callback that notifies the user when the sequence has completed
-    public var complete: Completed 
+    public var complete: Completed
     /**
     * Initiate the scene-runner
     * - Fixme: ⚠️️ Add support for launchOptions as well?
@@ -31,7 +31,7 @@ open class SceneRunner: ArrayIterator<SceneKind.Type>, SceneRunnerKind {
     *   - launchEnvironment: A dictionary representing the environment variables to be set for the application launch
     *   - launchArgs: An array of strings representing the launch arguments to be passed to the application
     */
-    @discardableResult 
+    @discardableResult
     public init(sequence: [SceneKind.Type], testCase: XCTestCase? = nil/*, launchArgs: [String] = [], launchEnvironment: [String: String] = [:]*/, onComplete: @escaping Completed) {
         self.testCase = testCase
         // self.launchArgs = launchArgs
