@@ -1,6 +1,8 @@
 import XCTest
 #if canImport(XCTest)
-// Public protocol that defines the requirements for a SceneRunner
+/**
+ * Public protocol that defines the requirements for a SceneRunner.
+ */
 public protocol SceneRunnerKind {
    /**
     * Method to run a specific scene

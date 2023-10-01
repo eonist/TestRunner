@@ -13,13 +13,21 @@ import XCTest
  * SceneRunner(scenes: [LoginScene.self, LogoutScene.self]) { Swift.print("All scenes completed 🏁") }.iterate(callBack: { _,_  in })
  */
 open class SceneRunner: ArrayIterator<SceneKind.Type>, SceneRunnerKind {
-    // Convenient accessor to the app
+    /**
+     * Convenient accessor to the app
+     */
     public lazy var app: XCUIApplication = createXCUIApp()
-    // Stores the scenes in the sequence
+    /**
+     * Stores the scenes in the sequence
+     */
     public var scenes: [SceneKind.Type] { collection }
-    // Optional XCTestCase instance
+    /**
+     * Optional XCTestCase instance
+     */
     public var testCase: XCTestCase?
-    // A callback that notifies the user when the sequence has completed
+    /**
+     * A callback that notifies the user when the sequence has completed
+     */
     public var complete: Completed
     /**
     * Initiate the scene-runner
