@@ -17,10 +17,9 @@ extension SceneRunner {
     * we can access the springboard app using its bundle id: private static `let springboardApp = XCUIApplication(bundleIdentifier: "com.apple.springboard")`
     */
    @objc open func createXCUIApp() -> XCUIApplication {
-      // This function creates a new instance of XCUIApplication, launches it, and returns it.
-      let app = XCUIApplication()
-      app.launch()
-      return app
+      let app = XCUIApplication() // Creates a new instance of XCUIApplication
+      app.launch() //  launches it
+      return app // and returns it.
    }
 }
 // - Fixme: ⚠️️ We could enhance this by launching the app with a specific bundleID. 
