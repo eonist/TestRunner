@@ -14,17 +14,6 @@
 - It allows you to create scenes that can be played and receive notifications upon their completion.
 - You can iterate through scenes in sequences, reuse common scenes such as `LoginScene` and `LogoutScene`, and operate asynchronously.
 
-### Table of Contents
-- [Overview](#overview)
-- [How does it work](#how-does-it-work)
-- [Key Concepts](#key-concepts)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Dependencies](#dependencies)
-- [Resources](#resources)
-- [Contributing](#contributing)
-- [License](#license)
-
 ### How does it work
 TestRunner allows you to:
 - Create scenes that you can play and receive notifications upon their completion (asynchronously).
