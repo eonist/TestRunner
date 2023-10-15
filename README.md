@@ -22,9 +22,9 @@ TestRunner allows you to:
 - Operate asynchronously.
 
 ## Key Concepts:
-- Step: A single interaction logic, usually encapsulated in an anonymous closure.
-- Scene: A series of steps.
-- Sequence: A series of scenes.
+- **Step**: A single interaction logic, usually encapsulated in an anonymous closure.
+- **Scene**: A series of steps.
+- **Sequence**: A series of scenes.
  
 ## Installation
 
