@@ -10,7 +10,7 @@
 > Simplifies running UI-tests
 
 ### Description:
-- TestRunner is a Swift package that simplifies running UI tests. 
+- TestRunner is a Swift package that simplifies running UI tests for iOS and macOS. 
 - It allows you to create scenes that can be played and receive notifications upon their completion.
 - You can iterate through scenes in sequences, reuse common scenes such as `LoginScene` and `LogoutScene`, and operate asynchronously.
 
@@ -73,7 +73,7 @@ runner.iterate() // 🏃
 > Add this framework via XCode SPM-package-manager to the `UITesting-target` in xcode, not main target
 
 ## Resources:
--[Using XCTest and XCTestCase for iOS Tests](https://medium.com/tauk-blog/using-xctest-and-xctestcase-for-ios-tests-28828c829b3): A comprehensive guide on utilizing XCTest and XCTestCase for iOS testing.
+- [Using XCTest and XCTestCase for iOS Tests](https://medium.com/tauk-blog/using-xctest-and-xctestcase-for-ios-tests-28828c829b3): A comprehensive guide on utilizing XCTest and XCTestCase for iOS testing.
 
 - [Using XCTest Extension in a Swift Package](https://dr-rost.medium.com/using-xctest-extension-in-a-swift-package-c954b8ed4d62): An informative post detailing the integration of XCTest extension within a Swift package.
 
