@@ -20,16 +20,17 @@ TestRunner allows you to:
 - Iterate through scenes in sequences.
 - Reuse common scenes such as `LoginScene` and `LogoutScene`.
 - Operate asynchronously.
-
-### How it looks:  
-Here is a QA Test prototype for debugging a playlist feature:  
-  
-<img width="320" alt="img" src="https://github.com/stylekit/img/blob/master/test_af.gif?raw=true">
-
+- 
 ## Key Concepts:
 - **Step**: A single interaction logic, usually encapsulated in an anonymous closure.
 - **Scene**: A series of steps.
 - **Sequence**: A series of scenes.
+
+### Demo:  
+Here is a QA Test prototype for debugging a playlist feature:  
+  
+<img width="320" alt="img" src="https://github.com/stylekit/img/blob/master/test_af.gif?raw=true">
+
 
 ## Installation
 
