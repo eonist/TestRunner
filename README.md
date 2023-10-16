@@ -9,12 +9,12 @@
 
 > Simplifies running UI-tests
 
-### Description:
+## Description:
 - TestRunner is a Swift package that simplifies running UI tests for iOS and macOS.
 - It allows you to create scenes that can be played and receive notifications upon their completion.
 - You can iterate through scenes in sequences, reuse common scenes such as `LoginScene` and `LogoutScene`, and operate asynchronously.
 
-### How does it work
+## How does it work
 TestRunner allows you to:
 - Create scenes that you can play and receive notifications upon their completion (asynchronously).
 - Iterate through scenes in sequences.
@@ -26,7 +26,7 @@ TestRunner allows you to:
 - **Scene**: A series of steps.
 - **Sequence**: A series of scenes.
 
-### Demo:  
+## Demo:  
 Here is a QA Test prototype for debugging a playlist feature:  
   
 <img width="320" alt="img" src="https://github.com/stylekit/img/blob/master/test_af.gif?raw=true">
@@ -54,7 +54,7 @@ Then add `TestRunner` as a dependency for your target:
 Alternatively, you can add TestRunner to your project using Xcode. Simply go to `File > Swift Packages > Add Package Dependency` and enter the URL of this repository.
 
 
-### Example:
+## Example:
 ```swift
 class SearchScene {
   override run(){
@@ -72,7 +72,7 @@ runner.app.launch()
 runner.iterate() // 🏃
 ```
 
-### Dependencies:
+## Dependencies:
 - [https://github.com/eonist/UITestSugar](https://github.com/eonist/UITestSugar)
 
 > **Warning**  
