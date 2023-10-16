@@ -21,8 +21,8 @@ TestRunner allows you to:
 - Reuse common scenes such as `LoginScene` and `LogoutScene`.
 - Operate asynchronously.
 
-### How it looks:
-Here is a QA Test prototype for debugging a playlist feature:
+### How it looks:  
+Here is a QA Test prototype for debugging a playlist feature:  
 <img width="320" alt="img" src="https://github.com/stylekit/img/blob/master/test_af.gif?raw=true">
 
 ## Key Concepts:
