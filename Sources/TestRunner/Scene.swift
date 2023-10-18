@@ -7,8 +7,7 @@ import Foundation
  */
 open class Scene: SceneKind {
    /**
-    * This is a public variable named sceneRunner of type SceneRunnerKind.
-    * It's used to run the scenes in the sequence.
+    * Used to run the scenes in the sequence.
     */
    public var sceneRunner: SceneRunnerKind
    /**

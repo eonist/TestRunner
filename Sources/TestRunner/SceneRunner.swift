@@ -36,14 +36,12 @@ open class SceneRunner: ArrayIterator<SceneKind.Type>, SceneRunnerKind {
     *   - sequence: An array of scenes (to be played out)
     *   - onComplete: A callback that notifies the user when the sequence has completed
     *   - testCase: An optional XCTestCase instance that can be used to run tests on the scenes
-    *   - launchEnvironment: A dictionary representing the environment variables to be set for the application launch
-    *   - launchArgs: An array of strings representing the launch arguments to be passed to the application
     */
     @discardableResult
-    public init(sequence: [SceneKind.Type], testCase: XCTestCase? = nil/*, launchArgs: [String] = [], launchEnvironment: [String: String] = [:]*/, onComplete: @escaping Completed) {
+    public init(sequence: [SceneKind.Type], testCase: XCTestCase? = nil, onComplete: @escaping Completed) { /*, launchArgs: [String] = [], launchEnvironment: [String: String] = [:]*/
         self.testCase = testCase
-        // self.launchArgs = launchArgs
-        // self.launchEnvironment = launchEnvironment
+        // self.launchArgs = launchArgs // fix: remove these?  //  - launchEnvironment: A dictionary representing the environment variables to be set for the application launch
+        // self.launchEnvironment = launchEnvironment // fix: remove these? //  - launchArgs: An array of strings representing the launch arguments to be passed to the application
         self.complete = onComplete
         super.init(array: sequence)
     }

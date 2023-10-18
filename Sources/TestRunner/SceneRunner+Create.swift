@@ -18,7 +18,7 @@ extension SceneRunner {
     */
    @objc open func createXCUIApp() -> XCUIApplication {
       let app = XCUIApplication() // Creates a new instance of XCUIApplication
-      app.launch() //  launches it
+      app.launch() // launches it
       return app // and returns it.
    }
 }

@@ -6,8 +6,8 @@ extension SceneRunner {
    /**
     * Call this to begin iterating over the scenes.
     * - Description: This function will keep iterating until all scenes have been iterated over.
-    * It uses recursion to iterate over the scenes. If there is a next scene, it initializes and runs it.
-    * If there are no more scenes, it calls the complete function to signal that all scenes have been run.
+    * - Remark: It uses recursion to iterate over the scenes. If there is a next scene, it initializes and runs it.
+    * - Remark: If there are no more scenes, it calls the complete function to signal that all scenes have been run.
     */
    public func iterate() {
       // Check if there is a next scene
