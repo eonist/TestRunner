@@ -4,7 +4,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
    lazy var window: UIWindow? = {
       let win = UIWindow(frame: UIScreen.main.bounds)
-      let vc = MainVC()
+      let vc: MainVC = .init()
       win.rootViewController = vc
       win.makeKeyAndVisible()/*Important since we have no Main storyboard anymore*/
       return win
@@ -25,4 +25,4 @@ class MainVC: UIViewController {
    }
    override var prefersStatusBarHidden: Bool { true }
 }
-class MainView: UIView { }
+class MainView: UIView {}

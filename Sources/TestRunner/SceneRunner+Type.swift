@@ -1,7 +1,7 @@
 import Foundation
 /**
  * `SceneRunner` Extension
- * This extension adds additional functionality to the `SceneRunner` class.
+ * - Description: This extension adds additional functionality to the `SceneRunner` class.
  */
 extension SceneRunner {
     /**
