@@ -23,7 +23,6 @@ open class Scene: SceneKind {
     */
    open func run() {
       // This is a placeholder implementation of the run method.
-      // It simply throws a fatal error, indicating that this method must be overridden by any subclass of Scene.
       fatalError("Must be implemented by super-type")
    }
 }
