@@ -20,7 +20,7 @@ TestRunner allows you to:
 - Iterate through scenes in sequences.
 - Reuse common scenes such as `LoginScene` and `LogoutScene`.
 - Operate asynchronously.
-- 
+
 ## Key Concepts:
 - **Step**: A single interaction logic, usually encapsulated in an anonymous closure.
 - **Scene**: A series of steps.
