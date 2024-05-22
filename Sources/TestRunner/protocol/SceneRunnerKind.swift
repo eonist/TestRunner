@@ -1,5 +1,5 @@
-import XCTest
 #if canImport(XCTest)
+import XCTest
 /**
  * Public protocol that defines the requirements for a SceneRunner.
  */

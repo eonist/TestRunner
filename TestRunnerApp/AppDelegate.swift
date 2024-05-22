@@ -1,5 +1,7 @@
 import UIKit
-
+/**
+ * - Fixme: ⚠️️ add more doc
+ */
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
    lazy var window: UIWindow? = {

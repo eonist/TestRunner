@@ -4,7 +4,7 @@ import Iterator
 #if canImport(XCTest) // Conditional import for XCTest
 import XCTest
 /**
- * `SceneRunner` is a class that plays through scenes like a playlist.
+ * `SceneRunner` is a class that "plays" through scenes like a playlist.
  * It is a subclass of `ArrayIterator` with `SceneKind.Type` as the generic parameter.
  * It also conforms to `SceneRunnerKind` protocol.
  *
@@ -31,7 +31,7 @@ open class SceneRunner: ArrayIterator<SceneKind.Type>, SceneRunnerKind {
     public var complete: Completed
     /**
     * Initiate the scene-runner
-    * - Fixme: ⚠️️ Add support for launchOptions as well?
+    * - Fixme: ⚠️️ Add support for launchOptions as well? Might not need it, explore further
     * - Parameters:
     *   - sequence: An array of scenes (to be played out)
     *   - onComplete: A callback that notifies the user when the sequence has completed

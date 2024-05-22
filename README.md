@@ -90,4 +90,4 @@ runner.iterate() // 🏃
 - Add example project (See TabNav-project, playlist-project, UITesting-project) 👈👈👈
 - Maybe add ideas from AccessRunner project, might have advanced ways of doing things etc 👈
 - Maybe use semaphore to make async -> sync ? 👈
-- Clean up UITestSugar
+- Create a test project in SwiftUI

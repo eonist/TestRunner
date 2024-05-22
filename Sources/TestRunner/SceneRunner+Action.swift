@@ -4,10 +4,10 @@ import Foundation
  */
 extension SceneRunner {
    /**
-    * Call this to begin iterating over the scenes.
-    * - Description: This function will keep iterating until all scenes have been iterated over.
-    * - Remark: It uses recursion to iterate over the scenes. If there is a next scene, it initializes and runs it.
-    * - Remark: If there are no more scenes, it calls the complete function to signal that all scenes have been run.
+    * Call this to begin iterating over the scenes
+    * - Description: This function will keep iterating until all scenes have been iterated over
+    * - Remark: It uses recursion to iterate over the scenes. If there is a next scene, it initializes and runs it
+    * - Remark: If there are no more scenes, it calls the complete function to signal that all scenes have been run
     */
    public func iterate() {
       // Check if there is a next scene
@@ -22,10 +22,10 @@ extension SceneRunner {
    }
    /**
     * Run a scene
-    * - Description: This function takes a scene of type SceneKind and calls its run function.
-    * It is used in the iterate function to run each scene.
+    * - Description: This function takes a scene of type SceneKind and calls its run function
+    * It is used in the iterate function to run each scene
     * - Parameters:
-    *   - scene: The scene to run, of type `SceneKind`.
+    *   - scene: The scene to run, of type `SceneKind`
     */
    public func run(scene: SceneKind) {
       scene.run() // Call the run function of the scene
