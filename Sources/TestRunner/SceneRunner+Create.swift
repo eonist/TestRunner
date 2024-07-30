@@ -6,15 +6,10 @@ import XCTest
  */
 extension SceneRunner {
    /**
-    * This function is very convenient when testing scenes. It creates only one reference to the app, 
-    * which is necessary for the tests to work correctly
-    * 
-    * - Remark: Every call to `XCUIApplication` creates a new instance of this object. This is why the `XCUIApplication` 
-    * object is created at the beginning of the test and stored in the `app` variable. This ensures that we are working 
-    * with the same instance throughout the test.
-    * 
-    * - Remark: Anywhere in the app we can also access this and other apps by knowing their bundle id. For example, 
-    * we can access the springboard app using its bundle id: private static `let springboardApp = XCUIApplication(bundleIdentifier: "com.apple.springboard")`
+    * Creates a single reference to the `XCUIApplication`, essential for consistent application state during tests.
+    * This method initializes the `XCUIApplication` and stores it in the `app` property. This approach prevents the creation of multiple instances during tests, ensuring that all test actions and verifications are performed on the same application instance.
+    * - Remark: Instantiating `XCUIApplication` directly creates a new application instance each time. To maintain test consistency, it is initialized once and reused throughout the testing process.
+    * - Remark: This method also allows for the interaction with other applications by using their specific bundle identifiers. For instance, the SpringBoard application can be accessed with `XCUIApplication(bundleIdentifier: "com.apple.springboard")`, facilitating tests that involve multiple applications.
     */
    @objc open func createXCUIApp() -> XCUIApplication {
       let app: XCUIApplication = .init() // Creates a new instance of XCUIApplication
@@ -22,8 +17,8 @@ extension SceneRunner {
       return app // and returns it
    }
 }
+#endif
 // - Fixme: ⚠️️ We could enhance this by launching the app with a specific bundleID. 
 // For example, to launch the mobile safari app, we could use its bundle id like this:
 // app = XCUIApplication(bundleIdentifier: "com.apple.mobilesafari")
 // app.launch()
-#endif

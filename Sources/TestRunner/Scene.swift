@@ -1,18 +1,17 @@
-// Importing the Foundation framework, which provides the base layer of functionality for apps and frameworks in Swift.
 import Foundation
 /**
- * A scene is a part of a sequence and represents a specific moment in time within a larger narrative or process, such as a game level or a movie scene. It can have many steps, which are the individual actions or events that occur within the scene.
+ * A scene is a component of a sequence and encapsulates a distinct moment or phase within a broader narrative or operational process, such as a level in a video game or a scene in a film. Each scene comprises multiple steps, which are the discrete actions or events that unfold during the scene.
  * ## Examples:
- * Sequence([Scene([Step(), Step(), Step()])]) // This is an example of a sequence with a single scene, which itself contains three steps.
+ * Sequence([Scene([Step(), Step(), Step()])]) // This example illustrates a sequence containing a single scene, which in turn includes three steps.
  */
 open class Scene: SceneKind {
    /**
-    * Used to run the scenes in the sequence.
+    * This method is responsible for executing the actions defined within this scene as part of a larger sequence managed by `SceneRunnerKind`. It orchestrates the progression of steps or events that make up the scene, ensuring they are performed in the intended order and manner.
     */
    public var sceneRunner: SceneRunnerKind
    /**
-    * This is the initializer for the Scene class.
-    * - Parameter scenerunner: A reference to the "sequencer" of the scenes. This is the object that controls the order and execution of the scenes.
+    * Initializes a new instance of the Scene class.
+    * - Parameter sceneRunner: A reference to the SceneRunnerKind instance that manages the sequence and execution of scenes. This parameter is crucial as it links the scene with its controlling runner, enabling coordinated progression through a series of scenes.
     */
    public required init(sceneRunner: SceneRunnerKind) {
       self.sceneRunner = sceneRunner  // Assigning the sceneRunner parameter to the sceneRunner property of the Scene instance.

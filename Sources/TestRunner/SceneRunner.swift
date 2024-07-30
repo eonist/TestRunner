@@ -1,4 +1,3 @@
-// Importing necessary libraries
 import Foundation
 import Iterator
 #if canImport(XCTest) // Conditional import for XCTest
@@ -30,12 +29,13 @@ open class SceneRunner: ArrayIterator<SceneKind.Type>, SceneRunnerKind {
      */
     public var complete: Completed
     /**
-    * Initiate the scene-runner
-    * - Fixme: ⚠️️ Add support for launchOptions as well? Might not need it, explore further
+    * Initializes the scene-runner with a sequence of scenes, an optional test case, and a completion handler.
+    * This initializer sets up the scene-runner to execute a series of scenes, which are types conforming to `SceneKind`. It optionally accepts a test case for integrating with XCTest functionalities. The completion handler is called once all scenes have been processed.
+    * - Fixme: ⚠️️ Consider adding support for launch options to customize the app's launch configuration.
     * - Parameters:
-    *   - sequence: An array of scenes (to be played out)
-    *   - onComplete: A callback that notifies the user when the sequence has completed
-    *   - testCase: An optional XCTestCase instance that can be used to run tests on the scenes
+    *   - sequence: An array of `SceneKind.Type` representing the scenes to be executed.
+    *   - onComplete: A callback that is invoked when all scenes in the sequence have been completed.
+    *   - testCase: An optional `XCTestCase` instance that can be used for additional testing capabilities during scene execution.
     */
     @discardableResult
     public init(sequence: [SceneKind.Type], testCase: XCTestCase? = nil, onComplete: @escaping Completed) { /*, launchArgs: [String] = [], launchEnvironment: [String: String] = [:]*/

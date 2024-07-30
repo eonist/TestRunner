@@ -4,10 +4,10 @@ import Foundation
  */
 extension SceneRunner {
    /**
-    * Call this to begin iterating over the scenes
-    * - Description: This function will keep iterating until all scenes have been iterated over
-    * - Remark: It uses recursion to iterate over the scenes. If there is a next scene, it initializes and runs it
-    * - Remark: If there are no more scenes, it calls the complete function to signal that all scenes have been run
+    * Initiates the process of iterating over the scenes.
+    * - Description: This method initiates the iteration over the collection of scenes. It continues to iterate until all scenes have been processed. The iteration is recursive; for each scene, it initializes and executes the scene, and if there are no more scenes left, it triggers the completion handler to indicate that the iteration is complete.
+    * - Remark: Utilizes recursion to manage the iteration of scenes. Each scene is initialized and executed in sequence.
+    * - Remark: Upon completion of all scenes, the `complete` method is invoked to signify the end of the scene processing.
     */
    public func iterate() {
       // Check if there is a next scene
@@ -21,11 +21,10 @@ extension SceneRunner {
       }
    }
    /**
-    * Run a scene
-    * - Description: This function takes a scene of type SceneKind and calls its run function
-    * It is used in the iterate function to run each scene
+    * Executes the run method of a given scene.
+    * - Description: This method is responsible for executing the run method of the scene passed to it. It is a crucial part of the scene iteration process in the `iterate` method, where it is invoked for each scene in the sequence. This ensures that each scene is run in the order they appear in the sequence.
     * - Parameters:
-    *   - scene: The scene to run, of type `SceneKind`
+    *   - scene: The scene to be executed, conforming to the `SceneKind` protocol.
     */
    public func run(scene: SceneKind) {
       scene.run() // Call the run function of the scene
