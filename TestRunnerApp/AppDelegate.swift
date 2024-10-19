@@ -1,6 +1,6 @@
 import UIKit
 /**
- * - Fixme: ⚠️️ add more doc
+ * - Fixme: ⚠️️ Use SwiftUI instead
  */
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

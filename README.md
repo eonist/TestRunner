@@ -87,7 +87,13 @@ runner.iterate() // 🏃
 
 
 ### Todo:
-- Add example project (See TabNav-project, playlist-project, UITesting-project) 👈👈👈
+- Add example project (See TabNav-project, playlist-project, UITesting-project, or make a new one) 👈👈👈
 - Maybe add ideas from AccessRunner project, might have advanced ways of doing things etc 👈
 - Maybe use semaphore to make async -> sync ? 👈
 - Create a test project in SwiftUI
+- Error Handling and Logging in Scene Execution
+The Scene class's run method currently uses a placeholder implementation that simply throws a fatal error if not overridden. This could be improved by adding error handling capabilities, which would allow for better debugging and error logging.
+- SwiftUI Migration: The AppDelegate in the TestRunnerApp uses UIKit and has a comment suggesting migration to SwiftUI. This could improve maintainability and modernize the codebase.
+- Testing Enhancements: The SceneRunner class could include more robust testing features, such as support for launch options to customize the app's launch configuration. This would allow for more flexible and comprehensive testing scenarios.
+- SwiftLint Integration: The GitHub Actions workflow mentions an issue with SwiftLint integration. Addressing this could help maintain code quality and consistency across the project.
+- UI Testing Enhancements: The UI tests could be expanded to cover more scenarios and utilize the capabilities of UITestSugar more effectively. This would ensure that the UI components work as expected under various conditions.

@@ -23,7 +23,9 @@ public protocol SceneRunnerKind {
     */
    var complete: SceneRunner.Completed { get }
    /**
-    * Optionally holds a reference to an `XCTestCase` if one is associated with the SceneRunner, facilitating integration with XCTest.
+    * - Description: Optionally holds a reference to an `XCTestCase` if one is
+    *               associated with the SceneRunner, facilitating integration
+    *               with XCTest.
     */
    var testCase: XCTestCase? { get }
 }
