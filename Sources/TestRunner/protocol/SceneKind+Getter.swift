@@ -14,8 +14,8 @@ extension SceneKind {
    *         developers to create comprehensive test suites that cover a wide
    *         range of user experiences.
    */
-   public var app: XCUIApplication { 
-      sceneRunner.app 
+   public var app: XCUIApplication {
+      sceneRunner.app
    }
 }
 #endif
