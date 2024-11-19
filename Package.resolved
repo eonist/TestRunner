@@ -6,7 +6,7 @@
       "location" : "https://github.com/eonist/Iterator.git",
       "state" : {
         "branch" : "master",
-        "revision" : "478aaf66373574f51ad6785852743f89ec69eb65"
+        "revision" : "f6ebf4c8d329f572396b75f38f260fe573df4ef1"
       }
     },
     {
@@ -15,7 +15,7 @@
       "location" : "https://github.com/eonist/UITestSugar.git",
       "state" : {
         "branch" : "master",
-        "revision" : "28df083106b5e0c6bfce68140ec8cac5b0bb8d99"
+        "revision" : "1b42ce8ff86788a5d705f407257779c6f14d2d0c"
       }
     }
   ],

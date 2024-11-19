@@ -80,11 +80,8 @@ runner.iterate() // 🏃
 
 ## Resources:
 - [Using XCTest and XCTestCase for iOS Tests](https://medium.com/tauk-blog/using-xctest-and-xctestcase-for-ios-tests-28828c829b3): A comprehensive guide on utilizing XCTest and XCTestCase for iOS testing.
-
 - [Using XCTest Extension in a Swift Package](https://dr-rost.medium.com/using-xctest-extension-in-a-swift-package-c954b8ed4d62): An informative post detailing the integration of XCTest extension within a Swift package.
-
 - [Xcode UI Testing Cheat Sheet](https://www.hackingwithswift.com/articles/148/xcode-ui-testing-cheat-sheet): A handy cheat sheet offering quick reference for Xcode UI testing.
-
 
 ### Todo:
 - Add example project (See TabNav-project, playlist-project, UITesting-project, or make a new one) 👈👈👈
