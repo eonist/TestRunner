@@ -1,9 +1,9 @@
-// swift-tools-version:5.6
+// swift-tools-version:5.9
 import PackageDescription
 
 let package = Package(
     name: "TestRunner", // The name of the package
-    platforms: [.iOS(.v15), .macOS(.v12)], // The platforms the package supports
+    platforms: [.iOS(.v17), .macOS(.v14)], // The platforms the package supports
     products: [
         .library(
             name: "TestRunner", // The name of the library product

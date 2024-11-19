@@ -97,3 +97,4 @@ The Scene class's run method currently uses a placeholder implementation that si
 - Testing Enhancements: The SceneRunner class could include more robust testing features, such as support for launch options to customize the app's launch configuration. This would allow for more flexible and comprehensive testing scenarios.
 - SwiftLint Integration: The GitHub Actions workflow mentions an issue with SwiftLint integration. Addressing this could help maintain code quality and consistency across the project.
 - UI Testing Enhancements: The UI tests could be expanded to cover more scenarios and utilize the capabilities of UITestSugar more effectively. This would ensure that the UI components work as expected under various conditions.
+- Upgrade to swift 6.0 (Might be a bit tricky with TestRunner)
