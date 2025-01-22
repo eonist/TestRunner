@@ -23,6 +23,7 @@ public protocol SceneKind {
     var sceneRunner: SceneRunnerKind { get }
     /**
      * Runs the scene.
+     * fixme: make this throw
      * - Description: This method is responsible for executing the actions
      *                defined within this scene. It orchestrates the progression
      *                of events that make up the scene, ensuring they are

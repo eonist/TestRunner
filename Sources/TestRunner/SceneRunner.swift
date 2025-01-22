@@ -71,7 +71,7 @@ open class SceneRunner: ArrayIterator<SceneKind.Type>, SceneRunnerKind {
     *   - testCase: An optional `XCTestCase` instance that can be used for
     *               additional testing capabilities during scene execution.
     */
-    @discardableResult
+    // @discardableResult // The @discardableResult attribute is unnecessary on initializers.
     public init(sequence: [SceneKind.Type], testCase: XCTestCase? = nil, onComplete: @escaping Completed) { /*, launchArgs: [String] = [], launchEnvironment: [String: String] = [:]*/
         self.testCase = testCase // Assigns the provided testCase to the `testCase` property of the `SceneRunner`
         // self.launchArgs = launchArgs // fix: remove these?  //  - launchEnvironment: A dictionary representing the environment variables to be set for the application launch
