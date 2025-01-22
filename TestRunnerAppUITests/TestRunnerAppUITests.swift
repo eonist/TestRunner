@@ -36,16 +36,19 @@ class TestRunnerAppUITests: XCTestCase {
 
         // Use UITestSugar to interact with UI elements
         let usernameField = XTElement.findFirst("UsernameField")
+        usernameField.tap()
         usernameField.typeText("testuser")
 
         let passwordField = XTElement.findFirst("PasswordField")
+        passwordField.tap()
         passwordField.typeText("password")
 
         let loginButton = XTElement.findFirst("LoginButton")
+        XCTAssertTrue(loginButton.exists, "Login button should exist")
         loginButton.tap()
 
         // Assert that the login was successful
         let welcomeMessage = XTElement.findFirst("WelcomeMessage")
-        XCTAssertTrue(welcomeMessage.exists)
+        XCTAssertTrue(welcomeMessage.waitForExistence(timeout: 5), "Welcome message should appear after login")
     }
 }

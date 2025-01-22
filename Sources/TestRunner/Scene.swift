@@ -40,5 +40,9 @@ open class Scene: SceneKind {
    open func run() {
       // This is a placeholder implementation of the run method.
       fatalError("Must be implemented by super-type")
+      // fixme: add the bellow later when we make this throw etc
+      // throw NSError(domain: "SceneErrorDomain", code: -1, userInfo: [
+      //    NSLocalizedDescriptionKey: "Must be implemented by subclass"
+      // ])
    }
 }

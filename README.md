@@ -10,9 +10,7 @@
 > Simplifies running UI-tests
 
 ## Description:
-- TestRunner is a Swift package that simplifies running UI tests for iOS and macOS.
-- It allows you to create scenes that can be played and receive notifications upon their completion.
-- You can iterate through scenes in sequences, reuse common scenes such as `LoginScene` and `LogoutScene`, and operate asynchronously.
+`TestRunner` is a Swift package that simplifies running UI tests for iOS and macOS. It allows you to create scenes—series of steps—that can be played and receive notifications upon their completion. You can iterate through scenes in sequences, reuse common scenes like `LoginScene` and `LogoutScene`, and operate asynchronously.
 
 ## How does it work
 TestRunner allows you to:
@@ -56,27 +54,67 @@ Alternatively, you can add TestRunner to your project using Xcode. Simply go to 
 
 ## Example:
 ```swift
-class SearchScene {
-  override run(){
-    let searchBar = XTElement.findFirst("SearchBar")
-    searchBar.search("Eminem")
-    let searchButton = XTElement.findFirst("SearchButton")
-    searchButton.tap()
-    onComplete()
-  }
+class SearchScene: Scene {
+    override func run() {
+        let searchBar = XTElement.findFirst("SearchBar")
+        searchBar.search("Eminem")
+        let searchButton = XTElement.findFirst("SearchButton")
+        searchButton.tap()
+        onComplete() // Notify that the scene has completed
+    }
 }
+
+// Define the sequence of scenes
 let sequence: [SceneKind.Type] = [LoginScene.self, SearchScene.self, LogoutScene.self]
-let runner: SceneRunner = .init(sequence: sequence, onComplete: {})
-runner.complete { Swift.print("All scenes completed 🏁") }
-runner.app.launch()
-runner.iterate() // 🏃
+
+// Initialize the SceneRunner with the sequence
+let runner = SceneRunner(sequence: sequence) {
+    Swift.print("All scenes completed 🏁")
+}
+
+runner.app.launch()    // Launch the application
+runner.iterate()       // Start running the scenes
 ```
 
-## Dependencies:
-- [https://github.com/eonist/UITestSugar](https://github.com/eonist/UITestSugar)
+**LoginScene example**
+```swift
+import TestRunner
 
-> **Warning**  
-> Add this framework via XCode SPM-package-manager to the `UITesting-target` in xcode, not main target
+class LoginScene: Scene {
+    override func run() async throws {
+        let app = sceneRunner.app
+
+        let usernameField = app.textFields["UsernameField"]
+        XCTAssertTrue(usernameField.exists, "Username field should exist")
+        usernameField.tap()
+        usernameField.typeText("testuser")
+
+        let passwordField = app.secureTextFields["PasswordField"]
+        XCTAssertTrue(passwordField.exists, "Password field should exist")
+        passwordField.tap()
+        passwordField.typeText("password")
+
+        let loginButton = app.buttons["LoginButton"]
+        XCTAssertTrue(loginButton.exists, "Login button should exist")
+        loginButton.tap()
+
+        // Wait for the next screen
+        let homeScreen = app.staticTexts["HomeScreen"]
+        let exists = await homeScreen.waitForExistence(timeout: 5)
+        if !exists {
+            throw NSError(domain: "LoginSceneError", code: -1, userInfo: [
+                NSLocalizedDescriptionKey: "Failed to navigate to home screen"
+            ])
+        }
+    }
+}
+```
+
+## Dependencies
+
+- [UITestSugar](https://github.com/eonist/UITestSugar): A utility library that simplifies writing UI tests by providing syntactic sugar and helper functions.
+
+  > **Note**: Add `UITestSugar` to your `UITesting` target using Xcode's Swift Package Manager, not the main target.
 
 ## Resources:
 - [Using XCTest and XCTestCase for iOS Tests](https://medium.com/tauk-blog/using-xctest-and-xctestcase-for-ios-tests-28828c829b3): A comprehensive guide on utilizing XCTest and XCTestCase for iOS testing.
@@ -95,3 +133,61 @@ The Scene class's run method currently uses a placeholder implementation that si
 - SwiftLint Integration: The GitHub Actions workflow mentions an issue with SwiftLint integration. Addressing this could help maintain code quality and consistency across the project.
 - UI Testing Enhancements: The UI tests could be expanded to cover more scenarios and utilize the capabilities of UITestSugar more effectively. This would ensure that the UI components work as expected under various conditions.
 - Upgrade to swift 6.0 (Might be a bit tricky with TestRunner)
+- Introduce Async/Await Support
+To better handle asynchronous operations, you can utilize Swift's native concurrency features.
+```swift
+public protocol SceneKind {
+    var sceneRunner: SceneRunnerKind { get }
+    func run() async throws
+    init(sceneRunner: SceneRunnerKind)
+}
+open class Scene: SceneKind {
+    public var sceneRunner: SceneRunnerKind
+
+    public required init(sceneRunner: SceneRunnerKind) {
+        self.sceneRunner = sceneRunner
+    }
+
+    open func run() async throws {
+        throw NSError(domain: "SceneErrorDomain", code: -1, userInfo: [
+            NSLocalizedDescriptionKey: "Must be implemented by subclass"
+        ])
+    }
+}
+public func iterate() {
+    Task {
+        while hasNext() {
+            let sceneType = next()
+            let scene = sceneType.init(sceneRunner: self)
+            await run(scene: scene)
+        }
+        complete()
+    }
+}
+public func run(scene: SceneKind) async {
+    do {
+        try await scene.run()
+    } catch {
+        Logger.error("Failed to run scene: \(error.localizedDescription)")
+        // Handle error accordingly
+    }
+}
+public func iterate() {
+    Task {
+        while hasNext() {
+            let sceneType = next()
+            let scene = sceneType.init(sceneRunner: self)
+            await run(scene: scene)
+        }
+        complete()
+    }
+}
+public func run(scene: SceneKind) async {
+    do {
+        try await scene.run()
+    } catch {
+        Logger.error("Failed to run scene: \(error.localizedDescription)")
+        // Handle error accordingly
+    }
+}
+```
