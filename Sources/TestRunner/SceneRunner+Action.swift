@@ -17,12 +17,12 @@ extension SceneRunner {
     *           invoked to signify the end of the scene processing.
     */
    public func iterate() {
-       while hasNext() { / Check if there is a next scene
+       while hasNext() { // Check if there is a next scene
          let sceneType: SceneKind.Type = next() // Get the type of the next scene
          let scene: SceneKind = sceneType.init(sceneRunner: self) // Initialize the scene with the current SceneRunner
          run(scene: scene) // Run the scene
       }
-       // If there are no more scenes, call the complete function
+      // If there are no more scenes, call the complete function
       complete() // Call onComplete callback aka Scene done
    }
    /**
