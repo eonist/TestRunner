@@ -3,8 +3,10 @@ import XCTest
 
 final class TestRunnerTests: XCTestCase {
 
-    // fixme add doc
-    
+    /// A test case class for the `TestRunner` module.
+    ///
+    /// Contains unit tests that validate the behavior of `SceneRunner` and related classes.
+
     func testSceneRunnerExecutesScenes() {
         // Arrange
         class TestScene: Scene {
