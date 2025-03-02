@@ -1,5 +1,5 @@
 import Foundation
-import Iterator
+//import Iterator
 #if canImport(XCTest) // Conditional import for XCTest
 import XCTest
 /**

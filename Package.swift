@@ -10,13 +10,13 @@ let package = Package(
             targets: ["TestRunner"]) // The targets that the product depends on
     ],
     dependencies: [
-      .package(url: "https://github.com/eonist/Iterator.git", branch: "master"), // The dependency on the Iterator package
-      .package(url: "https://github.com/eonist/UITestSugar.git", branch: "master") // The dependency on the UITestSugar package
+//      .package(url: "https://github.com/eonist/Iterator.git", branch: "master"), // The dependency on the Iterator package
+//      .package(url: "https://github.com/eonist/UITestSugar.git", branch: "master") // The dependency on the UITestSugar package
     ],
     targets: [
         .target(
             name: "TestRunner", // The name of the target
-            dependencies: ["Iterator", "UITestSugar"], // The dependencies of the target
+            dependencies: [/*"Iterator"*//*, "UITestSugar"*/], // The dependencies of the target
             linkerSettings: [.linkedFramework("XCTest")] // The linker settings for the target
          ),
         .testTarget(
